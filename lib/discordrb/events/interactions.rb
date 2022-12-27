@@ -194,6 +194,42 @@ module Discordrb::Events
       @resolved.find { |data| data.key?(@target_id) }[@target_id]
     end
 
+    # @param name [String] The name of the option.
+    # @return [User]
+    def user(name)
+      @resolved[:users][@options[name].to_i]
+    end
+
+    # @param name [String] The name of the option.
+    # @return [Member]
+    def member(name)
+      @resolved[:members][@options[name].to_i]
+    end
+
+    # @param name [String] The name of the option.
+    # @return [Role]
+    def role(name)
+      @resolved[:roles][@options[name].to_i]
+    end
+
+    # @param name [String] The name of the option.
+    # @return [Channel]
+    def channel(name)
+      @resolved[:channels][@options[name].to_i]
+    end
+
+    # @param name [String] The name of the option.
+    # @return [Member, Role]
+    def mentionable(name)
+      member(name) || role(name)
+    end
+
+    # @param name [String] The name of the option.
+    # @return [Attachment]
+    def attachment(name)
+      @resolved[:attachments][@options[name].to_i]
+    end
+
     private
 
     def process_resolved(resolved_data)
