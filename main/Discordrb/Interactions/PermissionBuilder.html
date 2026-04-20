@@ -6,13 +6,13 @@
 <title>
   Class: Discordrb::Interactions::PermissionBuilder
   
-    &mdash; Documentation by YARD 0.9.38
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Discordrb::Interactions::PermissionBuilder";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -94,17 +96,16 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/discordrb/data/interaction.rb</dd>
+    <dd>lib/discordrb/data/interaction.rb
+</dd>
   </dl>
   
 </div>
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'><p>This system is being replaced in the near future.</p>
-</div></div>
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'><p>This system is being replaced in the near future.</p></div></div>
 <p>Builder for creating server application command permissions.</p>
-
 
   </div>
 </div>
@@ -125,7 +126,6 @@
   <div class="discussion">
     <p>Role permission type</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -139,7 +139,6 @@
           <div class="docstring">
   <div class="discussion">
     <p>User permission type</p>
-
 
   </div>
 </div>
@@ -184,8 +183,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Allow an entity to use this command.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Allow an entity to use this command.</p></div></span>
   
 </li>
 
@@ -207,8 +205,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Allow a role to use this command.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Allow a role to use this command.</p></div></span>
   
 </li>
 
@@ -230,8 +227,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Allow a user to use this command.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Allow a user to use this command.</p></div></span>
   
 </li>
 
@@ -253,8 +249,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Deny an entity usage of this command.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Deny an entity usage of this command.</p></div></span>
   
 </li>
 
@@ -276,8 +271,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Deny a role usage of this command.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Deny a role usage of this command.</p></div></span>
   
 </li>
 
@@ -299,8 +293,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Deny a user usage of this command.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Deny a user usage of this command.</p></div></span>
   
 </li>
 
@@ -324,13 +317,13 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>A new instance of PermissionBuilder.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>A new instance of PermissionBuilder.</p></div></span>
   
 </li>
 
       
     </ul>
+    
   
 
 <div id="constructor_details" class="method_details_list">
@@ -349,7 +342,6 @@
   <div class="discussion">
     <p>Returns a new instance of PermissionBuilder.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -361,12 +353,12 @@
       <pre class="lines">
 
 
-781
-782
-783</pre>
+817
+818
+819</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 781</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 817</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
   <span class='ivar'>@permissions</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
@@ -396,7 +388,6 @@
   <div class="discussion">
     <p>Allow an entity to use this command.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -449,19 +440,19 @@
       <pre class="lines">
 
 
-817
-818
-819
-820
-821
-822
-823
-824
-825
-826</pre>
+853
+854
+855
+856
+857
+858
+859
+860
+861
+862</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 817</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 853</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_allow'>allow</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
   <span class='kw'>case</span> <span class='id identifier rubyid_object'>object</span>
@@ -491,7 +482,6 @@
   <div class="discussion">
     <p>Allow a role to use this command.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -531,12 +521,12 @@
       <pre class="lines">
 
 
-788
-789
-790</pre>
+824
+825
+826</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 788</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 824</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_allow_role'>allow_role</span><span class='lparen'>(</span><span class='id identifier rubyid_role_id'>role_id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_create_entry'>create_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_role_id'>role_id</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="#ROLE-constant" title="Discordrb::Interactions::PermissionBuilder::ROLE (constant)">ROLE</a></span></span><span class='comma'>,</span> <span class='kw'>true</span><span class='rparen'>)</span>
@@ -558,7 +548,6 @@
 </h3><div class="docstring">
   <div class="discussion">
     <p>Allow a user to use this command.</p>
-
 
   </div>
 </div>
@@ -599,12 +588,12 @@
       <pre class="lines">
 
 
-802
-803
-804</pre>
+838
+839
+840</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 802</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 838</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_allow_user'>allow_user</span><span class='lparen'>(</span><span class='id identifier rubyid_user_id'>user_id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_create_entry'>create_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_user_id'>user_id</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="#USER-constant" title="Discordrb::Interactions::PermissionBuilder::USER (constant)">USER</a></span></span><span class='comma'>,</span> <span class='kw'>true</span><span class='rparen'>)</span>
@@ -626,7 +615,6 @@
 </h3><div class="docstring">
   <div class="discussion">
     <p>Deny an entity usage of this command.</p>
-
 
   </div>
 </div>
@@ -680,19 +668,19 @@
       <pre class="lines">
 
 
-832
-833
-834
-835
-836
-837
-838
-839
-840
-841</pre>
+868
+869
+870
+871
+872
+873
+874
+875
+876
+877</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 832</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 868</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deny'>deny</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
   <span class='kw'>case</span> <span class='id identifier rubyid_object'>object</span>
@@ -721,7 +709,6 @@
 </h3><div class="docstring">
   <div class="discussion">
     <p>Deny a role usage of this command.</p>
-
 
   </div>
 </div>
@@ -762,12 +749,12 @@
       <pre class="lines">
 
 
-795
-796
-797</pre>
+831
+832
+833</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 795</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 831</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deny_role'>deny_role</span><span class='lparen'>(</span><span class='id identifier rubyid_role_id'>role_id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_create_entry'>create_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_role_id'>role_id</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="#ROLE-constant" title="Discordrb::Interactions::PermissionBuilder::ROLE (constant)">ROLE</a></span></span><span class='comma'>,</span> <span class='kw'>false</span><span class='rparen'>)</span>
@@ -789,7 +776,6 @@
 </h3><div class="docstring">
   <div class="discussion">
     <p>Deny a user usage of this command.</p>
-
 
   </div>
 </div>
@@ -830,12 +816,12 @@
       <pre class="lines">
 
 
-809
-810
-811</pre>
+845
+846
+847</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 809</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 845</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deny_user'>deny_user</span><span class='lparen'>(</span><span class='id identifier rubyid_user_id'>user_id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_create_entry'>create_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_user_id'>user_id</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="#USER-constant" title="Discordrb::Interactions::PermissionBuilder::USER (constant)">USER</a></span></span><span class='comma'>,</span> <span class='kw'>false</span><span class='rparen'>)</span>
@@ -850,9 +836,9 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  5 09:09:36 2026 by
+  Generated on Mon Apr 20 14:21:29 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.38 (ruby-3.3.10).
+  0.9.43 (ruby-3.3.11).
 </div>
 
     </div>

@@ -6,13 +6,13 @@
 <title>
   Class: Discordrb::ApplicationCommand::Permission
   
-    &mdash; Documentation by YARD 0.9.38
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Discordrb::ApplicationCommand::Permission";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -94,7 +96,8 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/discordrb/data/interaction.rb</dd>
+    <dd>lib/discordrb/data/interaction.rb
+</dd>
   </dl>
   
 </div>
@@ -102,7 +105,6 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     <p>An application command permission for a channel, member, or a role.</p>
-
 
   </div>
 </div>
@@ -122,7 +124,6 @@
           <div class="docstring">
   <div class="discussion">
     <p>Map of permission types.</p>
-
 
   </div>
 </div>
@@ -168,8 +169,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The ID of the server this permission is for.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The ID of the server this permission is for.</p></div></span>
   
 </li>
 
@@ -196,8 +196,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The ID of the thing this permission is for.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The ID of the entity this permission is for.</p></div></span>
   
 </li>
 
@@ -224,8 +223,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The type of this permission.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The type of this permission.</p></div></span>
   
 </li>
 
@@ -260,8 +258,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Whether this permission is applied to every channel in the server.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Whether this permission is applied to every channel in the server.</p></div></span>
   
 </li>
 
@@ -283,8 +280,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Whether this permission has been allowed, e.g has a green check in the UI.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Whether this permission has been allowed, e.g has a green check in the UI.</p></div></span>
   
 </li>
 
@@ -306,8 +302,29 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Whether this permission is for a channel.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Whether this permission is for a channel.</p></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#command_id-instance_method" title="#command_id (instance method)">#<strong>command_id</strong>  &#x21d2; Integer<sup>?</sup> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Get the ID of the application command this permission is for.</p></div></span>
   
 </li>
 
@@ -329,8 +346,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Whether this permission is the default for all commands that don&#39;t  contain explicit permission oerwrites.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Whether this permission is the default for all commands that don't  contain explicit permission oerwrites.</p></div></span>
   
 </li>
 
@@ -352,8 +368,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Whether this permission has been denied, e.g has a red check in the UI.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Whether this permission has been denied, e.g has a red X-mark in the UI.</p></div></span>
   
 </li>
 
@@ -375,8 +390,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Whether this permission is applied to the everyone role in the server.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Whether this permission is applied to the everyone role in the server.</p></div></span>
   
 </li>
 
@@ -398,8 +412,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Whether this permission is for a member.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Whether this permission is for a member.</p></div></span>
   
 </li>
 
@@ -421,8 +434,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Whether this permission is for a role.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Whether this permission is for a role.</p></div></span>
   
 </li>
 
@@ -446,13 +458,13 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get the user, role, or channel(s) that this permission targets.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Get the user, role, or channel(s) that this permission targets.</p></div></span>
   
 </li>
 
       
     </ul>
+    
   
 
 
@@ -474,7 +486,6 @@
   <div class="discussion">
     <p>Returns the ID of the server this permission is for.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -490,8 +501,7 @@
       
       
         &mdash;
-        <div class='inline'><p>the ID of the server this permission is for.</p>
-</div>
+        <div class='inline'><p>the ID of the server this permission is for.</p></div>
       
     </li>
   
@@ -503,12 +513,12 @@
       <pre class="lines">
 
 
-502
-503
-504</pre>
+531
+532
+533</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 502</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 531</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_server_id'>server_id</span>
   <span class='ivar'>@server_id</span>
@@ -531,8 +541,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the ID of the thing this permission is for.</p>
-
+    <p>Returns the ID of the entity this permission is for.</p>
 
   </div>
 </div>
@@ -549,8 +558,7 @@
       
       
         &mdash;
-        <div class='inline'><p>the ID of the thing this permission is for.</p>
-</div>
+        <div class='inline'><p>the ID of the entity this permission is for.</p></div>
       
     </li>
   
@@ -562,12 +570,12 @@
       <pre class="lines">
 
 
-499
-500
-501</pre>
+528
+529
+530</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 499</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 528</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_target_id'>target_id</span>
   <span class='ivar'>@target_id</span>
@@ -592,7 +600,6 @@
   <div class="discussion">
     <p>Returns the type of this permission.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -608,8 +615,7 @@
       
       
         &mdash;
-        <div class='inline'><p>the type of this permission.</p>
-</div>
+        <div class='inline'><p>the type of this permission.</p></div>
       
     </li>
   
@@ -628,12 +634,12 @@
       <pre class="lines">
 
 
-496
-497
-498</pre>
+525
+526
+527</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 496</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 525</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_type'>type</span>
   <span class='ivar'>@type</span>
@@ -663,7 +669,6 @@
   <div class="discussion">
     <p>Whether this permission is applied to every channel in the server.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -688,12 +693,12 @@
       <pre class="lines">
 
 
-542
-543
-544</pre>
+578
+579
+580</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 542</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 578</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_all_channels?'>all_channels?</span>
   <span class='ivar'>@target_id</span> <span class='op'>==</span> <span class='lparen'>(</span><span class='ivar'>@server_id</span> <span class='op'>-</span> <span class='int'>1</span><span class='rparen'>)</span>
@@ -716,7 +721,6 @@
   <div class="discussion">
     <p>Whether this permission has been allowed, e.g has a green check in the UI.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -741,12 +745,12 @@
       <pre class="lines">
 
 
-517
-518
-519</pre>
+546
+547
+548</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 517</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 546</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_allowed?'>allowed?</span>
   <span class='ivar'>@overwrite</span> <span class='op'>==</span> <span class='kw'>true</span>
@@ -769,7 +773,6 @@
   <div class="discussion">
     <p>Returns whether this permission is for a channel.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -785,8 +788,7 @@
       
       
         &mdash;
-        <div class='inline'><p>whether this permission is for a channel.</p>
-</div>
+        <div class='inline'><p>whether this permission is for a channel.</p></div>
       
     </li>
   
@@ -798,19 +800,75 @@
       <pre class="lines">
 
 
-567
-568
-569
-570
-571</pre>
+603
+604
+605
+606
+607</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 567</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 603</span>
 
 <span class='const'><span class='object_link'><a href="#TYPES-constant" title="Discordrb::ApplicationCommand::Permission::TYPES (constant)">TYPES</a></span></span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
   <span class='id identifier rubyid_define_method'>define_method</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>?</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='ivar'>@type</span> <span class='op'>==</span> <span class='id identifier rubyid_value'>value</span>
   <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="command_id-instance_method">
+  
+    #<strong>command_id</strong>  &#x21d2; <tt><span class='object_link'><a href="../../Integer.html" title="Integer (class)">Integer</a></span></tt><sup>?</sup> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Get the ID of the application command this permission is for.</p>
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../../Integer.html" title="Integer (class)">Integer</a></span></tt>, <tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>This will be <code>nil</code> if the permission is the
+default permission.</p></div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+565
+566
+567</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 565</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_command_id'>command_id</span>
+  <span class='ivar'>@command_id</span> <span class='kw'>unless</span> <span class='id identifier rubyid_default?'>default?</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -828,9 +886,8 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Whether this permission is the default for all commands that don&#39;t
- contain explicit permission oerwrites.</p>
-
+    <p>Whether this permission is the default for all commands that don't
+contain explicit permission oerwrites.</p>
 
   </div>
 </div>
@@ -856,12 +913,12 @@
       <pre class="lines">
 
 
-536
-537
-538</pre>
+572
+573
+574</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 536</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 572</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_default?'>default?</span>
   <span class='ivar'>@command_id</span> <span class='op'>==</span> <span class='ivar'>@application_id</span>
@@ -882,8 +939,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Whether this permission has been denied, e.g has a red check in the UI.</p>
-
+    <p>Whether this permission has been denied, e.g has a red X-mark in the UI.</p>
 
   </div>
 </div>
@@ -909,12 +965,12 @@
       <pre class="lines">
 
 
-523
-524
-525</pre>
+552
+553
+554</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 523</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 552</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_denied?'>denied?</span>
   <span class='ivar'>@overwrite</span> <span class='op'>==</span> <span class='kw'>false</span>
@@ -937,7 +993,6 @@
   <div class="discussion">
     <p>Whether this permission is applied to the everyone role in the server.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -962,12 +1017,12 @@
       <pre class="lines">
 
 
-529
-530
-531</pre>
+558
+559
+560</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 529</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 558</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_everyone?'>everyone?</span>
   <span class='ivar'>@target_id</span> <span class='op'>==</span> <span class='ivar'>@server_id</span>
@@ -990,7 +1045,6 @@
   <div class="discussion">
     <p>Returns whether this permission is for a member.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -1006,8 +1060,7 @@
       
       
         &mdash;
-        <div class='inline'><p>whether this permission is for a member.</p>
-</div>
+        <div class='inline'><p>whether this permission is for a member.</p></div>
       
     </li>
   
@@ -1019,14 +1072,14 @@
       <pre class="lines">
 
 
-567
-568
-569
-570
-571</pre>
+603
+604
+605
+606
+607</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 567</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 603</span>
 
 <span class='const'><span class='object_link'><a href="#TYPES-constant" title="Discordrb::ApplicationCommand::Permission::TYPES (constant)">TYPES</a></span></span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
   <span class='id identifier rubyid_define_method'>define_method</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>?</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
@@ -1051,7 +1104,6 @@
   <div class="discussion">
     <p>Returns whether this permission is for a role.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -1067,8 +1119,7 @@
       
       
         &mdash;
-        <div class='inline'><p>whether this permission is for a role.</p>
-</div>
+        <div class='inline'><p>whether this permission is for a role.</p></div>
       
     </li>
   
@@ -1080,14 +1131,14 @@
       <pre class="lines">
 
 
-567
-568
-569
-570
-571</pre>
+603
+604
+605
+606
+607</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 567</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 603</span>
 
 <span class='const'><span class='object_link'><a href="#TYPES-constant" title="Discordrb::ApplicationCommand::Permission::TYPES (constant)">TYPES</a></span></span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
   <span class='id identifier rubyid_define_method'>define_method</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>?</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
@@ -1116,7 +1167,6 @@
   <div class="discussion">
     <p>Get the user, role, or channel(s) that this permission targets.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -1141,19 +1191,19 @@
       <pre class="lines">
 
 
-548
-549
-550
-551
-552
-553
-554
-555
-556
-557</pre>
+584
+585
+586
+587
+588
+589
+590
+591
+592
+593</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 548</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/interaction.rb', line 584</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_target'>target</span>
   <span class='kw'>case</span> <span class='ivar'>@type</span>
@@ -1162,7 +1212,7 @@
   <span class='kw'>when</span> <span class='const'><span class='object_link'><a href="#TYPES-constant" title="Discordrb::ApplicationCommand::Permission::TYPES (constant)">TYPES</a></span></span><span class='lbracket'>[</span><span class='symbol'>:member</span><span class='rbracket'>]</span>
     <span class='ivar'>@bot</span><span class='period'>.</span><span class='id identifier rubyid_server'>server</span><span class='lparen'>(</span><span class='ivar'>@server_id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_member'>member</span><span class='lparen'>(</span><span class='ivar'>@target_id</span><span class='rparen'>)</span>
   <span class='kw'>when</span> <span class='const'><span class='object_link'><a href="#TYPES-constant" title="Discordrb::ApplicationCommand::Permission::TYPES (constant)">TYPES</a></span></span><span class='lbracket'>[</span><span class='symbol'>:channel</span><span class='rbracket'>]</span>
-    <span class='id identifier rubyid_all_channels'>all_channels</span> <span class='op'>?</span> <span class='ivar'>@bot</span><span class='period'>.</span><span class='id identifier rubyid_server'>server</span><span class='lparen'>(</span><span class='ivar'>@server_id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_channels'>channels</span> <span class='op'>:</span> <span class='lbracket'>[</span><span class='ivar'>@bot</span><span class='period'>.</span><span class='id identifier rubyid_channel'>channel</span><span class='lparen'>(</span><span class='ivar'>@target_id</span><span class='rparen'>)</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_all_channels?'>all_channels?</span> <span class='op'>?</span> <span class='ivar'>@bot</span><span class='period'>.</span><span class='id identifier rubyid_server'>server</span><span class='lparen'>(</span><span class='ivar'>@server_id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_channels'>channels</span> <span class='op'>:</span> <span class='lbracket'>[</span><span class='ivar'>@bot</span><span class='period'>.</span><span class='id identifier rubyid_channel'>channel</span><span class='lparen'>(</span><span class='ivar'>@target_id</span><span class='rparen'>)</span><span class='rbracket'>]</span>
   <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -1175,9 +1225,9 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  5 09:09:36 2026 by
+  Generated on Mon Apr 20 14:21:28 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.38 (ruby-3.3.10).
+  0.9.43 (ruby-3.3.11).
 </div>
 
     </div>

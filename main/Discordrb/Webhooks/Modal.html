@@ -6,13 +6,13 @@
 <title>
   Class: Discordrb::Webhooks::Modal
   
-    &mdash; Documentation by YARD 0.9.38
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Discordrb::Webhooks::Modal";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -94,7 +96,8 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/discordrb/webhooks/modal.rb</dd>
+    <dd>lib/discordrb/webhooks/modal.rb
+</dd>
   </dl>
   
 </div>
@@ -102,7 +105,6 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     <p>Modal component builder.</p>
-
 
   </div>
 </div>
@@ -133,7 +135,6 @@
   <div class="discussion">
     <p>A mapping of names to types of components usable in a modal.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -160,8 +161,7 @@
         <dt id="RowBuilder-constant" class="deprecated">RowBuilder =
           <div class="docstring">
   <div class="discussion">
-    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'><p>This alias will be removed in future releases.</p>
-</div></div>
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'><p>This alias will be removed in future releases.</p></div></div>
 
 
   </div>
@@ -209,8 +209,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Add a label component to the view.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Add a label component to the view.</p></div></span>
   
 </li>
 
@@ -232,13 +231,13 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Add a text display component to the view.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Add a text display component to the view.</p></div></span>
   
 </li>
 
       
     </ul>
+    
   
 
 
@@ -264,7 +263,6 @@
   <div class="discussion">
     <p>Add a label component to the view.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -283,12 +281,12 @@
       <pre class="lines">
 
 
-265
-266
-267</pre>
+269
+270
+271</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/modal.rb', line 265</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/modal.rb', line 269</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_label'>label</span><span class='lparen'>(</span><span class='op'>...</span><span class='rparen'>)</span>
   <span class='ivar'>@components</span> <span class='op'>&lt;&lt;</span> <span class='const'><span class='object_link'><a href="Modal/LabelBuilder.html" title="Discordrb::Webhooks::Modal::LabelBuilder (class)">LabelBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Modal/LabelBuilder.html#initialize-instance_method" title="Discordrb::Webhooks::Modal::LabelBuilder#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='op'>...</span><span class='rparen'>)</span>
@@ -311,7 +309,6 @@
   <div class="discussion">
     <p>Add a text display component to the view.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -330,12 +327,12 @@
       <pre class="lines">
 
 
-271
-272
-273</pre>
+275
+276
+277</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/modal.rb', line 271</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/modal.rb', line 275</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_text_display'>text_display</span><span class='lparen'>(</span><span class='op'>...</span><span class='rparen'>)</span>
   <span class='ivar'>@components</span> <span class='op'>&lt;&lt;</span> <span class='const'><span class='object_link'><a href="../../Discordrb.html" title="Discordrb (module)">Discordrb</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Webhooks.html" title="Discordrb::Webhooks (module)">Webhooks</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="View.html" title="Discordrb::Webhooks::View (class)">View</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="View/TextDisplayBuilder.html" title="Discordrb::Webhooks::View::TextDisplayBuilder (class)">TextDisplayBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="View/TextDisplayBuilder.html#initialize-instance_method" title="Discordrb::Webhooks::View::TextDisplayBuilder#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='op'>...</span><span class='rparen'>)</span>
@@ -350,9 +347,9 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  5 09:09:35 2026 by
+  Generated on Mon Apr 20 14:21:26 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.38 (ruby-3.3.10).
+  0.9.43 (ruby-3.3.11).
 </div>
 
     </div>

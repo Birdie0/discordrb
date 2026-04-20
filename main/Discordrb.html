@@ -6,13 +6,13 @@
 <title>
   Module: Discordrb
   
-    &mdash; Documentation by YARD 0.9.38
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="css/common.css" type="text/css" />
+  <link rel="stylesheet" href="css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Discordrb";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -78,8 +80,9 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/discordrb.rb<span class="defines">,<br />
-  lib/discordrb/bot.rb,<br /> lib/discordrb/await.rb,<br /> lib/discordrb/cache.rb,<br /> lib/discordrb/errors.rb,<br /> lib/discordrb/logger.rb,<br /> lib/discordrb/gateway.rb,<br /> lib/discordrb/version.rb,<br /> lib/discordrb/webhooks.rb,<br /> lib/discordrb/container.rb,<br /> lib/discordrb/data/call.rb,<br /> lib/discordrb/data/role.rb,<br /> lib/discordrb/data/user.rb,<br /> lib/discordrb/id_object.rb,<br /> lib/discordrb/paginator.rb,<br /> lib/discordrb/websocket.rb,<br /> lib/discordrb/colour_rgb.rb,<br /> lib/discordrb/data/embed.rb,<br /> lib/discordrb/data/emoji.rb,<br /> lib/discordrb/data/invite.rb,<br /> lib/discordrb/data/member.rb,<br /> lib/discordrb/data/server.rb,<br /> lib/discordrb/permissions.rb,<br /> lib/discordrb/data/channel.rb,<br /> lib/discordrb/data/message.rb,<br /> lib/discordrb/data/profile.rb,<br /> lib/discordrb/data/webhook.rb,<br /> lib/discordrb/data/activity.rb,<br /> lib/discordrb/data/reaction.rb,<br /> lib/discordrb/data/snapshot.rb,<br /> lib/discordrb/data/component.rb,<br /> lib/discordrb/data/overwrite.rb,<br /> lib/discordrb/data/recipient.rb,<br /> lib/discordrb/data/attachment.rb,<br /> lib/discordrb/data/audit_logs.rb,<br /> lib/discordrb/allowed_mentions.rb,<br /> lib/discordrb/data/application.rb,<br /> lib/discordrb/data/integration.rb,<br /> lib/discordrb/data/interaction.rb,<br /> lib/discordrb/data/voice_state.rb,<br /> lib/discordrb/webhooks/version.rb,<br /> lib/discordrb/data/collectibles.rb,<br /> lib/discordrb/data/voice_region.rb,<br /> lib/discordrb/data/primary_server.rb,<br /> lib/discordrb/data/server_preview.rb,<br /> lib/discordrb/data/avatar_decoration.rb,<br /> lib/discordrb/data/role_subscription.rb</span>
+    <dd>lib/discordrb.rb<span class="defines">,<br>
+  lib/discordrb/bot.rb,<br> lib/discordrb/await.rb,<br> lib/discordrb/cache.rb,<br> lib/discordrb/errors.rb,<br> lib/discordrb/logger.rb,<br> lib/discordrb/gateway.rb,<br> lib/discordrb/version.rb,<br> lib/discordrb/webhooks.rb,<br> lib/discordrb/container.rb,<br> lib/discordrb/data/call.rb,<br> lib/discordrb/data/poll.rb,<br> lib/discordrb/data/role.rb,<br> lib/discordrb/data/team.rb,<br> lib/discordrb/data/user.rb,<br> lib/discordrb/id_object.rb,<br> lib/discordrb/paginator.rb,<br> lib/discordrb/websocket.rb,<br> lib/discordrb/colour_rgb.rb,<br> lib/discordrb/data/embed.rb,<br> lib/discordrb/data/emoji.rb,<br> lib/discordrb/data/invite.rb,<br> lib/discordrb/data/member.rb,<br> lib/discordrb/data/server.rb,<br> lib/discordrb/permissions.rb,<br> lib/discordrb/data/channel.rb,<br> lib/discordrb/data/message.rb,<br> lib/discordrb/data/profile.rb,<br> lib/discordrb/data/webhook.rb,<br> lib/discordrb/data/activity.rb,<br> lib/discordrb/data/reaction.rb,<br> lib/discordrb/data/snapshot.rb,<br> lib/discordrb/data/component.rb,<br> lib/discordrb/data/overwrite.rb,<br> lib/discordrb/data/recipient.rb,<br> lib/discordrb/data/timestamp.rb,<br> lib/discordrb/data/attachment.rb,<br> lib/discordrb/data/audit_logs.rb,<br> lib/discordrb/allowed_mentions.rb,<br> lib/discordrb/data/application.rb,<br> lib/discordrb/data/channel_tag.rb,<br> lib/discordrb/data/integration.rb,<br> lib/discordrb/data/interaction.rb,<br> lib/discordrb/data/voice_state.rb,<br> lib/discordrb/webhooks/version.rb,<br> lib/discordrb/data/collectibles.rb,<br> lib/discordrb/data/voice_region.rb,<br> lib/discordrb/data/install_params.rb,<br> lib/discordrb/data/primary_server.rb,<br> lib/discordrb/data/server_preview.rb,<br> lib/discordrb/data/scheduled_event.rb,<br> lib/discordrb/data/message_activity.rb,<br> lib/discordrb/data/avatar_decoration.rb,<br> lib/discordrb/data/role_subscription.rb,<br> lib/discordrb/data/role_connection_data.rb</span>
+
 </dd>
   </dl>
   
@@ -88,7 +91,6 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     <p>Webhook support for discordrb</p>
-
 
   </div>
 </div>
@@ -103,7 +105,7 @@
     
   
     
-      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Discordrb/Activity.html" title="Discordrb::Activity (class)">Activity</a></span>, <span class='object_link'><a href="Discordrb/ActivitySet.html" title="Discordrb::ActivitySet (class)">ActivitySet</a></span>, <span class='object_link'><a href="Discordrb/AllowedMentions.html" title="Discordrb::AllowedMentions (class)">AllowedMentions</a></span>, <span class='object_link'><a href="Discordrb/Application.html" title="Discordrb::Application (class)">Application</a></span>, <span class='object_link'><a href="Discordrb/ApplicationCommand.html" title="Discordrb::ApplicationCommand (class)">ApplicationCommand</a></span>, <span class='object_link'><a href="Discordrb/Attachment.html" title="Discordrb::Attachment (class)">Attachment</a></span>, <span class='object_link'><a href="Discordrb/AuditLogs.html" title="Discordrb::AuditLogs (class)">AuditLogs</a></span>, <span class='object_link'><a href="Discordrb/AvatarDecoration.html" title="Discordrb::AvatarDecoration (class)">AvatarDecoration</a></span>, <span class='object_link'><a href="Discordrb/Await.html" title="Discordrb::Await (class)">Await</a></span>, <span class='object_link'><a href="Discordrb/Bot.html" title="Discordrb::Bot (class)">Bot</a></span>, <span class='object_link'><a href="Discordrb/BulkBan.html" title="Discordrb::BulkBan (class)">BulkBan</a></span>, <span class='object_link'><a href="Discordrb/Call.html" title="Discordrb::Call (class)">Call</a></span>, <span class='object_link'><a href="Discordrb/Channel.html" title="Discordrb::Channel (class)">Channel</a></span>, <span class='object_link'><a href="Discordrb/Collectibles.html" title="Discordrb::Collectibles (class)">Collectibles</a></span>, <span class='object_link'><a href="Discordrb/ColourRGB.html" title="Discordrb::ColourRGB (class)">ColourRGB</a></span>, <span class='object_link'><a href="Discordrb/Embed.html" title="Discordrb::Embed (class)">Embed</a></span>, <span class='object_link'><a href="Discordrb/EmbedAuthor.html" title="Discordrb::EmbedAuthor (class)">EmbedAuthor</a></span>, <span class='object_link'><a href="Discordrb/EmbedField.html" title="Discordrb::EmbedField (class)">EmbedField</a></span>, <span class='object_link'><a href="Discordrb/EmbedFooter.html" title="Discordrb::EmbedFooter (class)">EmbedFooter</a></span>, <span class='object_link'><a href="Discordrb/EmbedImage.html" title="Discordrb::EmbedImage (class)">EmbedImage</a></span>, <span class='object_link'><a href="Discordrb/EmbedProvider.html" title="Discordrb::EmbedProvider (class)">EmbedProvider</a></span>, <span class='object_link'><a href="Discordrb/EmbedThumbnail.html" title="Discordrb::EmbedThumbnail (class)">EmbedThumbnail</a></span>, <span class='object_link'><a href="Discordrb/EmbedVideo.html" title="Discordrb::EmbedVideo (class)">EmbedVideo</a></span>, <span class='object_link'><a href="Discordrb/Emoji.html" title="Discordrb::Emoji (class)">Emoji</a></span>, <span class='object_link'><a href="Discordrb/Gateway.html" title="Discordrb::Gateway (class)">Gateway</a></span>, <span class='object_link'><a href="Discordrb/Integration.html" title="Discordrb::Integration (class)">Integration</a></span>, <span class='object_link'><a href="Discordrb/IntegrationAccount.html" title="Discordrb::IntegrationAccount (class)">IntegrationAccount</a></span>, <span class='object_link'><a href="Discordrb/IntegrationApplication.html" title="Discordrb::IntegrationApplication (class)">IntegrationApplication</a></span>, <span class='object_link'><a href="Discordrb/Interaction.html" title="Discordrb::Interaction (class)">Interaction</a></span>, <span class='object_link'><a href="Discordrb/Invite.html" title="Discordrb::Invite (class)">Invite</a></span>, <span class='object_link'><a href="Discordrb/InviteChannel.html" title="Discordrb::InviteChannel (class)">InviteChannel</a></span>, <span class='object_link'><a href="Discordrb/InviteServer.html" title="Discordrb::InviteServer (class)">InviteServer</a></span>, <span class='object_link'><a href="Discordrb/Logger.html" title="Discordrb::Logger (class)">Logger</a></span>, <span class='object_link'><a href="Discordrb/Member.html" title="Discordrb::Member (class)">Member</a></span>, <span class='object_link'><a href="Discordrb/Message.html" title="Discordrb::Message (class)">Message</a></span>, <span class='object_link'><a href="Discordrb/Overwrite.html" title="Discordrb::Overwrite (class)">Overwrite</a></span>, <span class='object_link'><a href="Discordrb/Paginator.html" title="Discordrb::Paginator (class)">Paginator</a></span>, <span class='object_link'><a href="Discordrb/Permissions.html" title="Discordrb::Permissions (class)">Permissions</a></span>, <span class='object_link'><a href="Discordrb/PrimaryServer.html" title="Discordrb::PrimaryServer (class)">PrimaryServer</a></span>, <span class='object_link'><a href="Discordrb/Profile.html" title="Discordrb::Profile (class)">Profile</a></span>, <span class='object_link'><a href="Discordrb/Reaction.html" title="Discordrb::Reaction (class)">Reaction</a></span>, <span class='object_link'><a href="Discordrb/Recipient.html" title="Discordrb::Recipient (class)">Recipient</a></span>, <span class='object_link'><a href="Discordrb/Role.html" title="Discordrb::Role (class)">Role</a></span>, <span class='object_link'><a href="Discordrb/RoleSubscriptionData.html" title="Discordrb::RoleSubscriptionData (class)">RoleSubscriptionData</a></span>, <span class='object_link'><a href="Discordrb/Server.html" title="Discordrb::Server (class)">Server</a></span>, <span class='object_link'><a href="Discordrb/ServerBan.html" title="Discordrb::ServerBan (class)">ServerBan</a></span>, <span class='object_link'><a href="Discordrb/ServerPreview.html" title="Discordrb::ServerPreview (class)">ServerPreview</a></span>, <span class='object_link'><a href="Discordrb/Session.html" title="Discordrb::Session (class)">Session</a></span>, <span class='object_link'><a href="Discordrb/Snapshot.html" title="Discordrb::Snapshot (class)">Snapshot</a></span>, <span class='object_link'><a href="Discordrb/User.html" title="Discordrb::User (class)">User</a></span>, <span class='object_link'><a href="Discordrb/VoiceRegion.html" title="Discordrb::VoiceRegion (class)">VoiceRegion</a></span>, <span class='object_link'><a href="Discordrb/VoiceState.html" title="Discordrb::VoiceState (class)">VoiceState</a></span>, <span class='object_link'><a href="Discordrb/WebSocket.html" title="Discordrb::WebSocket (class)">WebSocket</a></span>, <span class='object_link'><a href="Discordrb/Webhook.html" title="Discordrb::Webhook (class)">Webhook</a></span>
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Discordrb/Activity.html" title="Discordrb::Activity (class)">Activity</a></span>, <span class='object_link'><a href="Discordrb/ActivitySet.html" title="Discordrb::ActivitySet (class)">ActivitySet</a></span>, <span class='object_link'><a href="Discordrb/AllowedMentions.html" title="Discordrb::AllowedMentions (class)">AllowedMentions</a></span>, <span class='object_link'><a href="Discordrb/Application.html" title="Discordrb::Application (class)">Application</a></span>, <span class='object_link'><a href="Discordrb/ApplicationCommand.html" title="Discordrb::ApplicationCommand (class)">ApplicationCommand</a></span>, <span class='object_link'><a href="Discordrb/Attachment.html" title="Discordrb::Attachment (class)">Attachment</a></span>, <span class='object_link'><a href="Discordrb/AuditLogs.html" title="Discordrb::AuditLogs (class)">AuditLogs</a></span>, <span class='object_link'><a href="Discordrb/AvatarDecoration.html" title="Discordrb::AvatarDecoration (class)">AvatarDecoration</a></span>, <span class='object_link'><a href="Discordrb/Await.html" title="Discordrb::Await (class)">Await</a></span>, <span class='object_link'><a href="Discordrb/Bot.html" title="Discordrb::Bot (class)">Bot</a></span>, <span class='object_link'><a href="Discordrb/BulkBan.html" title="Discordrb::BulkBan (class)">BulkBan</a></span>, <span class='object_link'><a href="Discordrb/Call.html" title="Discordrb::Call (class)">Call</a></span>, <span class='object_link'><a href="Discordrb/Channel.html" title="Discordrb::Channel (class)">Channel</a></span>, <span class='object_link'><a href="Discordrb/ChannelTag.html" title="Discordrb::ChannelTag (class)">ChannelTag</a></span>, <span class='object_link'><a href="Discordrb/Collectibles.html" title="Discordrb::Collectibles (class)">Collectibles</a></span>, <span class='object_link'><a href="Discordrb/ColourRGB.html" title="Discordrb::ColourRGB (class)">ColourRGB</a></span>, <span class='object_link'><a href="Discordrb/Embed.html" title="Discordrb::Embed (class)">Embed</a></span>, <span class='object_link'><a href="Discordrb/EmbedAuthor.html" title="Discordrb::EmbedAuthor (class)">EmbedAuthor</a></span>, <span class='object_link'><a href="Discordrb/EmbedField.html" title="Discordrb::EmbedField (class)">EmbedField</a></span>, <span class='object_link'><a href="Discordrb/EmbedFooter.html" title="Discordrb::EmbedFooter (class)">EmbedFooter</a></span>, <span class='object_link'><a href="Discordrb/EmbedImage.html" title="Discordrb::EmbedImage (class)">EmbedImage</a></span>, <span class='object_link'><a href="Discordrb/EmbedProvider.html" title="Discordrb::EmbedProvider (class)">EmbedProvider</a></span>, <span class='object_link'><a href="Discordrb/EmbedThumbnail.html" title="Discordrb::EmbedThumbnail (class)">EmbedThumbnail</a></span>, <span class='object_link'><a href="Discordrb/EmbedVideo.html" title="Discordrb::EmbedVideo (class)">EmbedVideo</a></span>, <span class='object_link'><a href="Discordrb/Emoji.html" title="Discordrb::Emoji (class)">Emoji</a></span>, <span class='object_link'><a href="Discordrb/Gateway.html" title="Discordrb::Gateway (class)">Gateway</a></span>, <span class='object_link'><a href="Discordrb/InstallParams.html" title="Discordrb::InstallParams (class)">InstallParams</a></span>, <span class='object_link'><a href="Discordrb/Integration.html" title="Discordrb::Integration (class)">Integration</a></span>, <span class='object_link'><a href="Discordrb/IntegrationAccount.html" title="Discordrb::IntegrationAccount (class)">IntegrationAccount</a></span>, <span class='object_link'><a href="Discordrb/IntegrationApplication.html" title="Discordrb::IntegrationApplication (class)">IntegrationApplication</a></span>, <span class='object_link'><a href="Discordrb/Interaction.html" title="Discordrb::Interaction (class)">Interaction</a></span>, <span class='object_link'><a href="Discordrb/Invite.html" title="Discordrb::Invite (class)">Invite</a></span>, <span class='object_link'><a href="Discordrb/InviteChannel.html" title="Discordrb::InviteChannel (class)">InviteChannel</a></span>, <span class='object_link'><a href="Discordrb/InviteServer.html" title="Discordrb::InviteServer (class)">InviteServer</a></span>, <span class='object_link'><a href="Discordrb/Logger.html" title="Discordrb::Logger (class)">Logger</a></span>, <span class='object_link'><a href="Discordrb/Member.html" title="Discordrb::Member (class)">Member</a></span>, <span class='object_link'><a href="Discordrb/Message.html" title="Discordrb::Message (class)">Message</a></span>, <span class='object_link'><a href="Discordrb/MessageActivity.html" title="Discordrb::MessageActivity (class)">MessageActivity</a></span>, <span class='object_link'><a href="Discordrb/Overwrite.html" title="Discordrb::Overwrite (class)">Overwrite</a></span>, <span class='object_link'><a href="Discordrb/Paginator.html" title="Discordrb::Paginator (class)">Paginator</a></span>, <span class='object_link'><a href="Discordrb/Permissions.html" title="Discordrb::Permissions (class)">Permissions</a></span>, <span class='object_link'><a href="Discordrb/Poll.html" title="Discordrb::Poll (class)">Poll</a></span>, <span class='object_link'><a href="Discordrb/PrimaryServer.html" title="Discordrb::PrimaryServer (class)">PrimaryServer</a></span>, <span class='object_link'><a href="Discordrb/Profile.html" title="Discordrb::Profile (class)">Profile</a></span>, <span class='object_link'><a href="Discordrb/Reaction.html" title="Discordrb::Reaction (class)">Reaction</a></span>, <span class='object_link'><a href="Discordrb/Recipient.html" title="Discordrb::Recipient (class)">Recipient</a></span>, <span class='object_link'><a href="Discordrb/Role.html" title="Discordrb::Role (class)">Role</a></span>, <span class='object_link'><a href="Discordrb/RoleConnectionMetadata.html" title="Discordrb::RoleConnectionMetadata (class)">RoleConnectionMetadata</a></span>, <span class='object_link'><a href="Discordrb/RoleSubscriptionData.html" title="Discordrb::RoleSubscriptionData (class)">RoleSubscriptionData</a></span>, <span class='object_link'><a href="Discordrb/ScheduledEvent.html" title="Discordrb::ScheduledEvent (class)">ScheduledEvent</a></span>, <span class='object_link'><a href="Discordrb/SearchedMessages.html" title="Discordrb::SearchedMessages (class)">SearchedMessages</a></span>, <span class='object_link'><a href="Discordrb/Server.html" title="Discordrb::Server (class)">Server</a></span>, <span class='object_link'><a href="Discordrb/ServerBan.html" title="Discordrb::ServerBan (class)">ServerBan</a></span>, <span class='object_link'><a href="Discordrb/ServerPreview.html" title="Discordrb::ServerPreview (class)">ServerPreview</a></span>, <span class='object_link'><a href="Discordrb/Session.html" title="Discordrb::Session (class)">Session</a></span>, <span class='object_link'><a href="Discordrb/Snapshot.html" title="Discordrb::Snapshot (class)">Snapshot</a></span>, <span class='object_link'><a href="Discordrb/Team.html" title="Discordrb::Team (class)">Team</a></span>, <span class='object_link'><a href="Discordrb/TimestampMarkdown.html" title="Discordrb::TimestampMarkdown (class)">TimestampMarkdown</a></span>, <span class='object_link'><a href="Discordrb/User.html" title="Discordrb::User (class)">User</a></span>, <span class='object_link'><a href="Discordrb/VoiceRegion.html" title="Discordrb::VoiceRegion (class)">VoiceRegion</a></span>, <span class='object_link'><a href="Discordrb/VoiceState.html" title="Discordrb::VoiceState (class)">VoiceState</a></span>, <span class='object_link'><a href="Discordrb/WebSocket.html" title="Discordrb::WebSocket (class)">WebSocket</a></span>, <span class='object_link'><a href="Discordrb/Webhook.html" title="Discordrb::Webhook (class)">Webhook</a></span>
     
   
 </p>
@@ -121,7 +123,6 @@
   <div class="discussion">
     <p>The default debug logger used by discordrb.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -136,7 +137,6 @@
   <div class="discussion">
     <p>The Unix timestamp Discord IDs are based on</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -150,7 +150,6 @@
           <div class="docstring">
   <div class="discussion">
     <p>Used to declare what events you wish to recieve from Discord.</p>
-
 
   </div>
 </div>
@@ -185,14 +184,15 @@
   <span class='label'>message_content:</span> <span class='int'>1</span> <span class='op'>&lt;&lt;</span> <span class='int'>15</span><span class='comma'>,</span>
   <span class='label'>server_scheduled_events:</span> <span class='int'>1</span> <span class='op'>&lt;&lt;</span> <span class='int'>16</span><span class='comma'>,</span>
   <span class='label'>auto_moderation_configuration:</span> <span class='int'>1</span> <span class='op'>&lt;&lt;</span> <span class='int'>20</span><span class='comma'>,</span>
-  <span class='label'>auto_moderation_execution:</span> <span class='int'>1</span> <span class='op'>&lt;&lt;</span> <span class='int'>21</span>
+  <span class='label'>auto_moderation_execution:</span> <span class='int'>1</span> <span class='op'>&lt;&lt;</span> <span class='int'>21</span><span class='comma'>,</span>
+  <span class='label'>server_message_polls:</span> <span class='int'>1</span> <span class='op'>&lt;&lt;</span> <span class='int'>24</span><span class='comma'>,</span>
+  <span class='label'>direct_message_polls:</span> <span class='int'>1</span> <span class='op'>&lt;&lt;</span> <span class='int'>25</span>
 <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
       
         <dt id="ALL_INTENTS-constant" class="">ALL_INTENTS =
           <div class="docstring">
   <div class="discussion">
     <p>All available intents</p>
-
 
   </div>
 </div>
@@ -207,7 +207,6 @@
           <div class="docstring">
   <div class="discussion">
     <p>All unprivileged intents</p>
-
 
   </div>
 </div>
@@ -230,7 +229,6 @@
   <div class="discussion">
     <p>No intents</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -245,7 +243,6 @@
   <div class="discussion">
     <p>The maximum length a Discord message can have</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -259,7 +256,6 @@
           <div class="docstring">
   <div class="discussion">
     <p>For creating timestamps with <span class='object_link'><a href="#timestamp-class_method" title="Discordrb.timestamp (method)">timestamp</a></span></p>
-
 
   </div>
 </div>
@@ -292,7 +288,6 @@
   <div class="discussion">
     <p>The format log timestamps should be in, in strftime format</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -307,7 +302,6 @@
   <div class="discussion">
     <p>The current version of discordrb.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -321,7 +315,6 @@
           <div class="docstring">
   <div class="discussion">
     <p>Alias for the class <span class='object_link'><a href="Discordrb/ColourRGB.html" title="Discordrb::ColourRGB (class)">ColourRGB</a></span></p>
-
 
   </div>
 </div>
@@ -366,8 +359,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>A utility method to base64 encode a file like object using its mime type.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>A utility method to base64 encode a file like object using its mime type.</p></div></span>
   
 </li>
 
@@ -389,8 +381,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Compares two objects based on IDs - either the objects&#39; IDs are equal, or one object is equal to the other&#39;s ID.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Compares two objects based on IDs - either the objects' IDs are equal, or one object is equal to the other's ID.</p></div></span>
   
 </li>
 
@@ -412,8 +403,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Splits a message into chunks of 2000 characters.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Splits a message into chunks of 2000 characters.</p></div></span>
   
 </li>
 
@@ -441,6 +431,7 @@
 
       
     </ul>
+    
   
 
 
@@ -462,7 +453,6 @@
   <div class="discussion">
     <p>A utility method to base64 encode a file like object using its mime type.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -479,8 +469,7 @@
       
       
         &mdash;
-        <div class='inline'><p>A file like object that responds to #read.</p>
-</div>
+        <div class='inline'><p>A file like object that responds to #read.</p></div>
       
     </li>
   
@@ -497,8 +486,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The file object encoded as base64 image data.</p>
-</div>
+        <div class='inline'><p>The file object encoded as base64 image data.</p></div>
       
     </li>
   
@@ -523,18 +511,18 @@
       <pre class="lines">
 
 
-133
-134
 135
 136
 137
 138
 139
 140
-141</pre>
+141
+142
+143</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb.rb', line 133</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb.rb', line 135</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_encode64'>encode64</span><span class='lparen'>(</span><span class='id identifier rubyid_file'>file</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_path_method'>path_method</span> <span class='op'>=</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>original_filename</span><span class='words_sep'> </span><span class='tstring_content'>path</span><span class='words_sep'> </span><span class='tstring_content'>local_path</span><span class='tstring_end'>]</span></span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_method'>method</span><span class='op'>|</span> <span class='id identifier rubyid_file'>file</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
@@ -561,8 +549,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Compares two objects based on IDs - either the objects&#39; IDs are equal, or one object is equal to the other&#39;s ID.</p>
-
+    <p>Compares two objects based on IDs - either the objects' IDs are equal, or one object is equal to the other's ID.</p>
 
   </div>
 </div>
@@ -588,12 +575,12 @@
       <pre class="lines">
 
 
-53
-54
-55</pre>
+55
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb.rb', line 53</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_id_compare?'>id_compare?</span><span class='lparen'>(</span><span class='id identifier rubyid_one_id'>one_id</span><span class='comma'>,</span> <span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='symbol'>:resolve_id</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='lparen'>(</span><span class='id identifier rubyid_one_id'>one_id</span><span class='period'>.</span><span class='id identifier rubyid_resolve_id'>resolve_id</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_resolve_id'>resolve_id</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='lparen'>(</span><span class='id identifier rubyid_one_id'>one_id</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span>
@@ -616,7 +603,6 @@
   <div class="discussion">
     <p>Splits a message into chunks of 2000 characters. Attempts to split by lines if possible.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -633,8 +619,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The message to split.</p>
-</div>
+        <div class='inline'><p>The message to split.</p></div>
       
     </li>
   
@@ -651,8 +636,7 @@
       
       
         &mdash;
-        <div class='inline'><p>the message split into chunks</p>
-</div>
+        <div class='inline'><p>the message split into chunks</p></div>
       
     </li>
   
@@ -664,8 +648,6 @@
       <pre class="lines">
 
 
-80
-81
 82
 83
 84
@@ -698,10 +680,12 @@
 111
 112
 113
-114</pre>
+114
+115
+116</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb.rb', line 80</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb.rb', line 82</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_split_message'>split_message</span><span class='lparen'>(</span><span class='id identifier rubyid_msg'>msg</span><span class='rparen'>)</span>
   <span class='comment'># If the messages is empty, return an empty array
@@ -781,8 +765,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The time to create the timestamp from, or a unix timestamp integer.</p>
-</div>
+        <div class='inline'><p>The time to create the timestamp from, or a unix timestamp integer.</p></div>
       
     </li>
   
@@ -798,8 +781,7 @@
       
       
         &mdash;
-        <div class='inline'><p>One of the keys from <span class='object_link'><a href="#TIMESTAMP_STYLES-constant" title="Discordrb::TIMESTAMP_STYLES (constant)">TIMESTAMP_STYLES</a></span> or a string with the style.</p>
-</div>
+        <div class='inline'><p>One of the keys from <span class='object_link'><a href="#TIMESTAMP_STYLES-constant" title="Discordrb::TIMESTAMP_STYLES (constant)">TIMESTAMP_STYLES</a></span> or a string with the style.</p></div>
       
     </li>
   
@@ -825,16 +807,16 @@
       <pre class="lines">
 
 
-122
-123
 124
 125
 126
 127
-128</pre>
+128
+129
+130</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb.rb', line 122</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb.rb', line 124</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_timestamp'>timestamp</span><span class='lparen'>(</span><span class='id identifier rubyid_time'>time</span><span class='comma'>,</span> <span class='id identifier rubyid_style'>style</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='id identifier rubyid_style'>style</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
@@ -853,9 +835,9 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  5 09:09:29 2026 by
+  Generated on Mon Apr 20 14:21:17 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.38 (ruby-3.3.10).
+  0.9.43 (ruby-3.3.11).
 </div>
 
     </div>

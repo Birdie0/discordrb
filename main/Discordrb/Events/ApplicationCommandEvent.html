@@ -6,13 +6,13 @@
 <title>
   Class: Discordrb::Events::ApplicationCommandEvent
   
-    &mdash; Documentation by YARD 0.9.38
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Discordrb::Events::ApplicationCommandEvent";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -98,7 +100,8 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/discordrb/events/interactions.rb</dd>
+    <dd>lib/discordrb/events/interactions.rb
+</dd>
   </dl>
   
 </div>
@@ -106,7 +109,6 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     <p>Event for ApplicationCommand interactions.</p>
-
 
   </div>
 </div>
@@ -146,8 +148,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The ID of the command.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The ID of the command.</p></div></span>
   
 </li>
 
@@ -174,8 +175,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The name of the command.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The name of the command.</p></div></span>
   
 </li>
 
@@ -202,8 +202,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Arguments provided to the command, mapped as <code>Name =&gt; Value</code>.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Arguments provided to the command, mapped as <code>Name =&gt; Value</code>.</p></div></span>
   
 </li>
 
@@ -230,8 +229,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The resolved channels, roles, users, members, and attachments for this event.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The resolved channels, roles, users, members, and attachments for this event.</p></div></span>
   
 </li>
 
@@ -258,8 +256,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The name of the subcommand relevant to this event.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The name of the subcommand relevant to this event.</p></div></span>
   
 </li>
 
@@ -286,8 +283,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The name of the subcommand group relevant to this event.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The name of the subcommand group relevant to this event.</p></div></span>
   
 </li>
 
@@ -314,8 +310,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The target of this command when it is a context command.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The target of this command when it is a context command.</p></div></span>
   
 </li>
 
@@ -342,6 +337,28 @@
     </h2>
 
     <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#global_command%3F-instance_method" title="#global_command? (instance method)">#<strong>global_command?</strong>  &#x21d2; true, false </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Whether or not the application command that was executed has been registered globally.</p></div></span>
+  
+</li>
+
       
         <li class="public ">
   <span class="summary_signature">
@@ -492,16 +509,17 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The target of this command, for context commands.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The target of this command, for context commands.</p></div></span>
   
 </li>
 
       
     </ul>
+    
   
 
 
+  
   
   
   
@@ -513,6 +531,7 @@
   <h3 class="inherited">Methods inherited from <span class='object_link'><a href="InteractionCreateEvent.html" title="Discordrb::Events::InteractionCreateEvent (class)">InteractionCreateEvent</a></span></h3>
   <p class="inherited"><span class='object_link'><a href="InteractionCreateEvent.html#defer-instance_method" title="Discordrb::Events::InteractionCreateEvent#defer (method)">#defer</a></span>, <span class='object_link'><a href="InteractionCreateEvent.html#defer_update-instance_method" title="Discordrb::Events::InteractionCreateEvent#defer_update (method)">#defer_update</a></span>, <span class='object_link'><a href="InteractionCreateEvent.html#delete_message-instance_method" title="Discordrb::Events::InteractionCreateEvent#delete_message (method)">#delete_message</a></span>, <span class='object_link'><a href="InteractionCreateEvent.html#delete_response-instance_method" title="Discordrb::Events::InteractionCreateEvent#delete_response (method)">#delete_response</a></span>, <span class='object_link'><a href="InteractionCreateEvent.html#edit_message-instance_method" title="Discordrb::Events::InteractionCreateEvent#edit_message (method)">#edit_message</a></span>, <span class='object_link'><a href="InteractionCreateEvent.html#edit_response-instance_method" title="Discordrb::Events::InteractionCreateEvent#edit_response (method)">#edit_response</a></span>, <span class='object_link'><a href="InteractionCreateEvent.html#get_component-instance_method" title="Discordrb::Events::InteractionCreateEvent#get_component (method)">#get_component</a></span>, <span class='object_link'><a href="InteractionCreateEvent.html#respond-instance_method" title="Discordrb::Events::InteractionCreateEvent#respond (method)">#respond</a></span>, <span class='object_link'><a href="InteractionCreateEvent.html#send_message-instance_method" title="Discordrb::Events::InteractionCreateEvent#send_message (method)">#send_message</a></span>, <span class='object_link'><a href="InteractionCreateEvent.html#show_modal-instance_method" title="Discordrb::Events::InteractionCreateEvent#show_modal (method)">#show_modal</a></span>, <span class='object_link'><a href="InteractionCreateEvent.html#update_message-instance_method" title="Discordrb::Events::InteractionCreateEvent#update_message (method)">#update_message</a></span></p>
 
+  
   
   
   
@@ -537,7 +556,6 @@
   <div class="discussion">
     <p>Returns The ID of the command.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -553,8 +571,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The ID of the command.</p>
-</div>
+        <div class='inline'><p>The ID of the command.</p></div>
       
     </li>
   
@@ -596,7 +613,6 @@
   <div class="discussion">
     <p>Returns The name of the command.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -612,8 +628,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The name of the command.</p>
-</div>
+        <div class='inline'><p>The name of the command.</p></div>
       
     </li>
   
@@ -655,7 +670,6 @@
   <div class="discussion">
     <p>Returns Arguments provided to the command, mapped as <code>Name =&gt; Value</code>.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -671,8 +685,7 @@
       
       
         &mdash;
-        <div class='inline'><p>Arguments provided to the command, mapped as <code>Name =&gt; Value</code>.</p>
-</div>
+        <div class='inline'><p>Arguments provided to the command, mapped as <code>Name =&gt; Value</code>.</p></div>
       
     </li>
   
@@ -714,7 +727,6 @@
   <div class="discussion">
     <p>Returns The resolved channels, roles, users, members, and attachments for this event.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -730,8 +742,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The resolved channels, roles, users, members, and attachments for this event.</p>
-</div>
+        <div class='inline'><p>The resolved channels, roles, users, members, and attachments for this event.</p></div>
       
     </li>
   
@@ -773,7 +784,6 @@
   <div class="discussion">
     <p>Returns The name of the subcommand relevant to this event.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -789,8 +799,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The name of the subcommand relevant to this event.</p>
-</div>
+        <div class='inline'><p>The name of the subcommand relevant to this event.</p></div>
       
     </li>
   
@@ -832,7 +841,6 @@
   <div class="discussion">
     <p>Returns The name of the subcommand group relevant to this event.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -848,8 +856,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The name of the subcommand group relevant to this event.</p>
-</div>
+        <div class='inline'><p>The name of the subcommand group relevant to this event.</p></div>
       
     </li>
   
@@ -891,7 +898,6 @@
   <div class="discussion">
     <p>Returns The target of this command when it is a context command.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -907,8 +913,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The target of this command when it is a context command.</p>
-</div>
+        <div class='inline'><p>The target of this command when it is a context command.</p></div>
       
     </li>
   
@@ -943,7 +948,66 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="options_attachment-instance_method">
+  <h3 class="signature first" id="global_command?-instance_method">
+  
+    #<strong>global_command?</strong>  &#x21d2; <tt>true</tt>, <tt>false</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns Whether or not the application command that was executed
+has been registered globally. If this is false, then the application command
+that was executed is only available in the invoking server.</p>
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>true</tt>, <tt>false</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Whether or not the application command that was executed
+has been registered globally. If this is false, then the application command
+that was executed is only available in the invoking server.</p></div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+234
+235
+236</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 234</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_global_command?'>global_command?</span>
+  <span class='ivar'>@command_server_id</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="options_attachment-instance_method">
   
     #<strong>options_attachment</strong>(name)  &#x21d2; <tt><span class='object_link'><a href="../Attachment.html" title="Discordrb::Attachment (class)">Attachment</a></span></tt> 
   
@@ -971,8 +1035,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The name of the option.</p>
-</div>
+        <div class='inline'><p>The name of the option.</p></div>
       
     </li>
   
@@ -998,12 +1061,12 @@
       <pre class="lines">
 
 
-269
-270
-271</pre>
+277
+278
+279</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 269</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 277</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_options_attachment'>options_attachment</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
   <span class='ivar'>@resolved</span><span class='lbracket'>[</span><span class='symbol'>:attachments</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='ivar'>@options</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rbracket'>]</span>
@@ -1042,8 +1105,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The name of the option.</p>
-</div>
+        <div class='inline'><p>The name of the option.</p></div>
       
     </li>
   
@@ -1069,12 +1131,12 @@
       <pre class="lines">
 
 
-257
-258
-259</pre>
+265
+266
+267</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 257</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 265</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_options_channel'>options_channel</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
   <span class='ivar'>@resolved</span><span class='lbracket'>[</span><span class='symbol'>:channels</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='ivar'>@options</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rbracket'>]</span>
@@ -1113,8 +1175,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The name of the option.</p>
-</div>
+        <div class='inline'><p>The name of the option.</p></div>
       
     </li>
   
@@ -1140,12 +1201,12 @@
       <pre class="lines">
 
 
-245
-246
-247</pre>
+253
+254
+255</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 245</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 253</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_options_member'>options_member</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
   <span class='ivar'>@resolved</span><span class='lbracket'>[</span><span class='symbol'>:members</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='ivar'>@options</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rbracket'>]</span>
@@ -1184,8 +1245,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The name of the option.</p>
-</div>
+        <div class='inline'><p>The name of the option.</p></div>
       
     </li>
   
@@ -1211,12 +1271,12 @@
       <pre class="lines">
 
 
-263
-264
-265</pre>
+271
+272
+273</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 263</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 271</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_options_mentionable'>options_mentionable</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_member'>member</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='id identifier rubyid_role'>role</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
@@ -1255,8 +1315,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The name of the option.</p>
-</div>
+        <div class='inline'><p>The name of the option.</p></div>
       
     </li>
   
@@ -1282,12 +1341,12 @@
       <pre class="lines">
 
 
-251
-252
-253</pre>
+259
+260
+261</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 251</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 259</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_options_role'>options_role</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
   <span class='ivar'>@resolved</span><span class='lbracket'>[</span><span class='symbol'>:roles</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='ivar'>@options</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rbracket'>]</span>
@@ -1326,8 +1385,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The name of the option.</p>
-</div>
+        <div class='inline'><p>The name of the option.</p></div>
       
     </li>
   
@@ -1353,12 +1411,12 @@
       <pre class="lines">
 
 
-239
-240
-241</pre>
+247
+248
+249</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 239</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 247</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_options_user'>options_user</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
   <span class='ivar'>@resolved</span><span class='lbracket'>[</span><span class='symbol'>:users</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='ivar'>@options</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rbracket'>]</span>
@@ -1381,7 +1439,6 @@
   <div class="discussion">
     <p>Returns The target of this command, for context commands.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -1397,8 +1454,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The target of this command, for context commands.</p>
-</div>
+        <div class='inline'><p>The target of this command, for context commands.</p></div>
       
     </li>
   
@@ -1410,14 +1466,14 @@
       <pre class="lines">
 
 
-231
-232
-233
-234
-235</pre>
+239
+240
+241
+242
+243</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 231</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 239</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_target'>target</span>
   <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>unless</span> <span class='ivar'>@target_id</span>
@@ -1434,9 +1490,9 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  5 09:09:37 2026 by
+  Generated on Mon Apr 20 14:21:29 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.38 (ruby-3.3.10).
+  0.9.43 (ruby-3.3.11).
 </div>
 
     </div>

@@ -6,13 +6,13 @@
 <title>
   Class: Discordrb::BulkBan
   
-    &mdash; Documentation by YARD 0.9.38
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Discordrb::BulkBan";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -94,15 +96,15 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/discordrb/data/server.rb</dd>
+    <dd>lib/discordrb/data/server.rb
+</dd>
   </dl>
   
 </div>
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>A bulk ban entry on a server</p>
-
+    <p>A bulk ban entry on a server.</p>
 
   </div>
 </div>
@@ -138,8 +140,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Array of user IDs that were banned.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Array of user IDs that were banned.</p></div></span>
   
 </li>
 
@@ -166,8 +167,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Array of user IDs that couldn&#39;t be banned.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Array of user IDs that couldn't be banned.</p></div></span>
   
 </li>
 
@@ -194,8 +194,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The reason these users were banned.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The reason these users were banned.</p></div></span>
   
 </li>
 
@@ -222,8 +221,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The server this bulk ban belongs to.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The server this bulk ban belongs to.</p></div></span>
   
 </li>
 
@@ -252,7 +250,6 @@
   <div class="discussion">
     <p>Returns Array of user IDs that were banned.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -268,8 +265,7 @@
       
       
         &mdash;
-        <div class='inline'><p>Array of user IDs that were banned.</p>
-</div>
+        <div class='inline'><p>Array of user IDs that were banned.</p></div>
       
     </li>
   
@@ -281,12 +277,12 @@
       <pre class="lines">
 
 
-1081
-1082
-1083</pre>
+1565
+1566
+1567</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/server.rb', line 1081</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/server.rb', line 1565</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_banned_users'>banned_users</span>
   <span class='ivar'>@banned_users</span>
@@ -309,8 +305,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns Array of user IDs that couldn&#39;t be banned.</p>
-
+    <p>Returns Array of user IDs that couldn't be banned.</p>
 
   </div>
 </div>
@@ -327,8 +322,7 @@
       
       
         &mdash;
-        <div class='inline'><p>Array of user IDs that couldn&#39;t be banned.</p>
-</div>
+        <div class='inline'><p>Array of user IDs that couldn't be banned.</p></div>
       
     </li>
   
@@ -340,12 +334,12 @@
       <pre class="lines">
 
 
-1084
-1085
-1086</pre>
+1568
+1569
+1570</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/server.rb', line 1084</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/server.rb', line 1568</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_failed_users'>failed_users</span>
   <span class='ivar'>@failed_users</span>
@@ -370,7 +364,6 @@
   <div class="discussion">
     <p>Returns The reason these users were banned.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -386,8 +379,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The reason these users were banned.</p>
-</div>
+        <div class='inline'><p>The reason these users were banned.</p></div>
       
     </li>
   
@@ -399,12 +391,12 @@
       <pre class="lines">
 
 
-1078
-1079
-1080</pre>
+1562
+1563
+1564</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/server.rb', line 1078</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/server.rb', line 1562</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reason'>reason</span>
   <span class='ivar'>@reason</span>
@@ -429,7 +421,6 @@
   <div class="discussion">
     <p>Returns The server this bulk ban belongs to.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -445,8 +436,7 @@
       
       
         &mdash;
-        <div class='inline'><p>The server this bulk ban belongs to.</p>
-</div>
+        <div class='inline'><p>The server this bulk ban belongs to.</p></div>
       
     </li>
   
@@ -458,12 +448,12 @@
       <pre class="lines">
 
 
-1075
-1076
-1077</pre>
+1559
+1560
+1561</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/server.rb', line 1075</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/server.rb', line 1559</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_server'>server</span>
   <span class='ivar'>@server</span>
@@ -479,9 +469,9 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  5 09:09:32 2026 by
+  Generated on Mon Apr 20 14:21:23 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.38 (ruby-3.3.10).
+  0.9.43 (ruby-3.3.11).
 </div>
 
     </div>

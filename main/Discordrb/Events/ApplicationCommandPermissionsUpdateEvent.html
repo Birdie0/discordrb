@@ -6,13 +6,13 @@
 <title>
   Class: Discordrb::Events::ApplicationCommandPermissionsUpdateEvent
   
-    &mdash; Documentation by YARD 0.9.38
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Discordrb::Events::ApplicationCommandPermissionsUpdateEvent";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -96,15 +98,15 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/discordrb/events/interactions.rb</dd>
+    <dd>lib/discordrb/events/interactions.rb
+</dd>
   </dl>
   
 </div>
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>An event for whenever an application command&#39;s permissions are updated.</p>
-
+    <p>An event for whenever an application command's permissions are updated.</p>
 
   </div>
 </div>
@@ -140,8 +142,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The ID of the application whose commands were updated.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The ID of the application whose commands were updated.</p></div></span>
   
 </li>
 
@@ -168,8 +169,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The ID of the application command that was updated.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The ID of the application command that was updated.</p></div></span>
   
 </li>
 
@@ -196,8 +196,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The permissions that were updated.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The permissions that were updated.</p></div></span>
   
 </li>
 
@@ -224,8 +223,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The ID of the server where the command permissions were updated.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The ID of the server where the command permissions were updated.</p></div></span>
   
 </li>
 
@@ -265,16 +263,17 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The server where the command&#39;s permissions were updated.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The server where the command's permissions were updated.</p></div></span>
   
 </li>
 
       
     </ul>
+    
   
 
 
+  
   
   
   
@@ -299,7 +298,6 @@
   <div class="discussion">
     <p>Returns the ID of the application whose commands were updated.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -315,8 +313,7 @@
       
       
         &mdash;
-        <div class='inline'><p>the ID of the application whose commands were updated.</p>
-</div>
+        <div class='inline'><p>the ID of the application whose commands were updated.</p></div>
       
     </li>
   
@@ -328,12 +325,12 @@
       <pre class="lines">
 
 
-619
-620
-621</pre>
+628
+629
+630</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 619</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 628</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_application_id'>application_id</span>
   <span class='ivar'>@application_id</span>
@@ -358,7 +355,6 @@
   <div class="discussion">
     <p>Returns the ID of the application command that was updated.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -374,8 +370,7 @@
       
       
         &mdash;
-        <div class='inline'><p>the ID of the application command that was updated.</p>
-</div>
+        <div class='inline'><p>the ID of the application command that was updated.</p></div>
       
     </li>
   
@@ -387,12 +382,12 @@
       <pre class="lines">
 
 
-613
-614
-615</pre>
+622
+623
+624</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 613</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 622</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_command_id'>command_id</span>
   <span class='ivar'>@command_id</span>
@@ -417,7 +412,6 @@
   <div class="discussion">
     <p>Returns the permissions that were updated.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -433,8 +427,7 @@
       
       
         &mdash;
-        <div class='inline'><p>the permissions that were updated.</p>
-</div>
+        <div class='inline'><p>the permissions that were updated.</p></div>
       
     </li>
   
@@ -446,12 +439,12 @@
       <pre class="lines">
 
 
-616
-617
-618</pre>
+625
+626
+627</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 616</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 625</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_permissions'>permissions</span>
   <span class='ivar'>@permissions</span>
@@ -476,7 +469,6 @@
   <div class="discussion">
     <p>Returns the ID of the server where the command permissions were updated.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -492,8 +484,7 @@
       
       
         &mdash;
-        <div class='inline'><p>the ID of the server where the command permissions were updated.</p>
-</div>
+        <div class='inline'><p>the ID of the server where the command permissions were updated.</p></div>
       
     </li>
   
@@ -505,12 +496,12 @@
       <pre class="lines">
 
 
-610
-611
-612</pre>
+619
+620
+621</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 610</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 619</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_server_id'>server_id</span>
   <span class='ivar'>@server_id</span>
@@ -538,8 +529,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the server where the command&#39;s permissions were updated.</p>
-
+    <p>Returns the server where the command's permissions were updated.</p>
 
   </div>
 </div>
@@ -556,8 +546,7 @@
       
       
         &mdash;
-        <div class='inline'><p>the server where the command&#39;s permissions were updated.</p>
-</div>
+        <div class='inline'><p>the server where the command's permissions were updated.</p></div>
       
     </li>
   
@@ -569,12 +558,12 @@
       <pre class="lines">
 
 
-633
-634
-635</pre>
+642
+643
+644</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 633</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/events/interactions.rb', line 642</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_server'>server</span>
   <span class='ivar'>@bot</span><span class='period'>.</span><span class='id identifier rubyid_server'>server</span><span class='lparen'>(</span><span class='ivar'>@server_id</span><span class='rparen'>)</span>
@@ -589,9 +578,9 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  5 09:09:37 2026 by
+  Generated on Mon Apr 20 14:21:30 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.38 (ruby-3.3.10).
+  0.9.43 (ruby-3.3.11).
 </div>
 
     </div>

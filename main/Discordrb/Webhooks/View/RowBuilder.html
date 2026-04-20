@@ -6,13 +6,13 @@
 <title>
   Class: Discordrb::Webhooks::View::RowBuilder
   
-    &mdash; Documentation by YARD 0.9.38
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="../../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Discordrb::Webhooks::View::RowBuilder";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -94,7 +96,8 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/discordrb/webhooks/view.rb</dd>
+    <dd>lib/discordrb/webhooks/view.rb
+</dd>
   </dl>
   
 </div>
@@ -104,7 +107,6 @@
     <p>This builder is used when constructing an ActionRow. Button and select menu components must be within an action row, but this can
 change in the future. A message can have 10 action rows, each action row can hold a weight of 5. Buttons have a weight of 1,
 and dropdowns have a weight of 5.</p>
-
 
   </div>
 </div>
@@ -143,8 +145,7 @@ and dropdowns have a weight of 5.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Add a button to this action row.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Add a button to this action row.</p></div></span>
   
 </li>
 
@@ -152,7 +153,7 @@ and dropdowns have a weight of 5.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#channel_select-instance_method" title="#channel_select (instance method)">#<strong>channel_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil, types: nil)  &#x21d2; Object </a>
+      <a href="#channel_select-instance_method" title="#channel_select (instance method)">#<strong>channel_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil, types: nil, default_values: nil)  &#x21d2; Object </a>
     
 
     
@@ -166,8 +167,7 @@ and dropdowns have a weight of 5.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Add a select channel to this action row.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Add a channel select to this action row.</p></div></span>
   
 </li>
 
@@ -175,7 +175,7 @@ and dropdowns have a weight of 5.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#mentionable_select-instance_method" title="#mentionable_select (instance method)">#<strong>mentionable_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil)  &#x21d2; Object </a>
+      <a href="#mentionable_select-instance_method" title="#mentionable_select (instance method)">#<strong>mentionable_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil, default_values: nil)  &#x21d2; Object </a>
     
 
     
@@ -189,8 +189,7 @@ and dropdowns have a weight of 5.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Add a select mentionable to this action row.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Add a mentionable select to this action row.</p></div></span>
   
 </li>
 
@@ -198,7 +197,7 @@ and dropdowns have a weight of 5.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#role_select-instance_method" title="#role_select (instance method)">#<strong>role_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil)  &#x21d2; Object </a>
+      <a href="#role_select-instance_method" title="#role_select (instance method)">#<strong>role_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil, default_values: nil)  &#x21d2; Object </a>
     
 
     
@@ -212,8 +211,7 @@ and dropdowns have a weight of 5.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Add a select role to this action row.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Add a role select to this action row.</p></div></span>
   
 </li>
 
@@ -237,8 +235,7 @@ and dropdowns have a weight of 5.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Add a string select to this action row.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Add a string select to this action row.</p></div></span>
   
 </li>
 
@@ -246,7 +243,7 @@ and dropdowns have a weight of 5.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#user_select-instance_method" title="#user_select (instance method)">#<strong>user_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil)  &#x21d2; Object </a>
+      <a href="#user_select-instance_method" title="#user_select (instance method)">#<strong>user_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil, default_values: nil)  &#x21d2; Object </a>
     
 
     
@@ -260,13 +257,13 @@ and dropdowns have a weight of 5.</p>
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Add a select user to this action row.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>Add a user select to this action row.</p></div></span>
   
 </li>
 
       
     </ul>
+    
   
 
 
@@ -288,7 +285,6 @@ and dropdowns have a weight of 5.</p>
   <div class="discussion">
     <p>Add a button to this action row.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -305,8 +301,7 @@ and dropdowns have a weight of 5.</p>
       
       
         &mdash;
-        <div class='inline'><p>The button&#39;s style type. See <span class='object_link'><a href="../View.html#BUTTON_STYLES-constant" title="Discordrb::Webhooks::View::BUTTON_STYLES (constant)">BUTTON_STYLES</a></span></p>
-</div>
+        <div class='inline'><p>The button's style type. See <span class='object_link'><a href="../View.html#BUTTON_STYLES-constant" title="Discordrb::Webhooks::View::BUTTON_STYLES (constant)">BUTTON_STYLES</a></span></p></div>
       
     </li>
   
@@ -322,8 +317,7 @@ and dropdowns have a weight of 5.</p>
       
       
         &mdash;
-        <div class='inline'><p>The unique 32-bit ID of the button component. This is not to be confused with the <code>custom_id</code>.</p>
-</div>
+        <div class='inline'><p>The unique 32-bit ID of the button component. This is not to be confused with the <code>custom_id</code>.</p></div>
       
     </li>
   
@@ -339,8 +333,7 @@ and dropdowns have a weight of 5.</p>
       
       
         &mdash;
-        <div class='inline'><p>The text label for the button. Either a label or emoji must be provided.</p>
-</div>
+        <div class='inline'><p>The text label for the button. Either a label or emoji must be provided.</p></div>
       
     </li>
   
@@ -357,8 +350,7 @@ and dropdowns have a weight of 5.</p>
       
         &mdash;
         <div class='inline'><p>An emoji ID, or unicode emoji to attach to the button. Can also be an object
-that responds to <code>#to_h</code> which returns a hash in the format of <code>{ id: Integer, name: string }</code>.</p>
-</div>
+that responds to <code>#to_h</code> which returns a hash in the format of <code>{ id: Integer, name: string }</code>.</p></div>
       
     </li>
   
@@ -375,8 +367,7 @@ that responds to <code>#to_h</code> which returns a hash in the format of <code>
       
         &mdash;
         <div class='inline'><p>Custom IDs are used to pass state to the events that are raised from interactions.
-There is a limit of 100 characters to each custom_id.</p>
-</div>
+There is a limit of 100 characters to each custom_id.</p></div>
       
     </li>
   
@@ -392,8 +383,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Whether this button is disabled and shown as greyed out.</p>
-</div>
+        <div class='inline'><p>Whether this button is disabled and shown as greyed out.</p></div>
       
     </li>
   
@@ -409,8 +399,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The URL, when using a link style button.</p>
-</div>
+        <div class='inline'><p>The URL, when using a link style button.</p></div>
       
     </li>
   
@@ -459,7 +448,7 @@ There is a limit of 100 characters to each custom_id.</p>
       <div class="method_details ">
   <h3 class="signature " id="channel_select-instance_method">
   
-    #<strong>channel_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil, types: nil)  &#x21d2; <tt>Object</tt> 
+    #<strong>channel_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil, types: nil, default_values: nil)  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -467,8 +456,7 @@ There is a limit of 100 characters to each custom_id.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Add a select channel to this action row.</p>
-
+    <p>Add a channel select to this action row.</p>
 
   </div>
 </div>
@@ -487,8 +475,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
         &mdash;
         <div class='inline'><p>Custom IDs are used to pass state to the events that are raised from interactions.
-There is a limit of 100 characters to each custom_id.</p>
-</div>
+There is a limit of 100 characters to each custom_id.</p></div>
       
     </li>
   
@@ -504,8 +491,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The unique 32-bit ID of the channel select. This is not to be confused with the <code>custom_id</code>.</p>
-</div>
+        <div class='inline'><p>The unique 32-bit ID of the channel select. This is not to be confused with the <code>custom_id</code>.</p></div>
       
     </li>
   
@@ -521,8 +507,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Default text to show when no entries are selected.</p>
-</div>
+        <div class='inline'><p>Default text to show when no entries are selected.</p></div>
       
     </li>
   
@@ -538,8 +523,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The minimum amount of values a user must select.</p>
-</div>
+        <div class='inline'><p>The minimum amount of values a user must select.</p></div>
       
     </li>
   
@@ -555,8 +539,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The maximum amount of values a user can select.</p>
-</div>
+        <div class='inline'><p>The maximum amount of values a user can select.</p></div>
       
     </li>
   
@@ -572,8 +555,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Grey out the component to make it unusable.</p>
-</div>
+        <div class='inline'><p>Grey out the component to make it unusable.</p></div>
       
     </li>
   
@@ -589,8 +571,23 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The channel types to include in the select menu.</p>
-</div>
+        <div class='inline'><p>The channel types to include in the select menu.</p></div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>default_values</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="../../Channel.html" title="Discordrb::Channel (class)">Channel</a></span>, <span class='object_link'><a href="../../../Integer.html" title="Integer (class)">Integer</a></span>, <span class='object_link'><a href="../../../String.html" title="String (class)">String</a></span>, Hash&gt;</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The channels to populate in the select menu by default.</p></div>
       
     </li>
   
@@ -603,19 +600,19 @@ There is a limit of 100 characters to each custom_id.</p>
       <pre class="lines">
 
 
-145
-146
-147
-148
 149
 150
-151</pre>
+151
+152
+153
+154
+155</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/view.rb', line 145</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/view.rb', line 149</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_channel_select'>channel_select</span><span class='lparen'>(</span><span class='label'>custom_id:</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>placeholder:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>min_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>max_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>disabled:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>types:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_builder'>builder</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="SelectMenuBuilder.html" title="Discordrb::Webhooks::View::SelectMenuBuilder (class)">SelectMenuBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="SelectMenuBuilder.html#initialize-instance_method" title="Discordrb::Webhooks::View::SelectMenuBuilder#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_custom_id'>custom_id</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_placeholder'>placeholder</span><span class='comma'>,</span> <span class='id identifier rubyid_min_values'>min_values</span><span class='comma'>,</span> <span class='id identifier rubyid_max_values'>max_values</span><span class='comma'>,</span> <span class='id identifier rubyid_disabled'>disabled</span><span class='comma'>,</span> <span class='label'>select_type:</span> <span class='symbol'>:channel_select</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_h'>to_h</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_channel_select'>channel_select</span><span class='lparen'>(</span><span class='label'>custom_id:</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>placeholder:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>min_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>max_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>disabled:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>types:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>default_values:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_builder'>builder</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="SelectMenuBuilder.html" title="Discordrb::Webhooks::View::SelectMenuBuilder (class)">SelectMenuBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_id'>custom_id</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_placeholder'>placeholder</span><span class='comma'>,</span> <span class='id identifier rubyid_min_values'>min_values</span><span class='comma'>,</span> <span class='id identifier rubyid_max_values'>max_values</span><span class='comma'>,</span> <span class='id identifier rubyid_disabled'>disabled</span><span class='comma'>,</span> <span class='label'>select_type:</span> <span class='symbol'>:channel_select</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>default_values:</span> <span class='id identifier rubyid_default_values'>default_values</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_h'>to_h</span>
 
   <span class='id identifier rubyid_builder'>builder</span><span class='lbracket'>[</span><span class='symbol'>:channel_types</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_types'>types</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_type'>type</span><span class='op'>|</span> <span class='const'><span class='object_link'><a href="../../../Discordrb.html" title="Discordrb (module)">Discordrb</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Channel.html" title="Discordrb::Channel (class)">Channel</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Channel.html#TYPES-constant" title="Discordrb::Channel::TYPES (constant)">TYPES</a></span></span><span class='lbracket'>[</span><span class='id identifier rubyid_type'>type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='id identifier rubyid_type'>type</span> <span class='rbrace'>}</span> <span class='kw'>if</span> <span class='id identifier rubyid_types'>types</span>
 
@@ -629,7 +626,7 @@ There is a limit of 100 characters to each custom_id.</p>
       <div class="method_details ">
   <h3 class="signature " id="mentionable_select-instance_method">
   
-    #<strong>mentionable_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil)  &#x21d2; <tt>Object</tt> 
+    #<strong>mentionable_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil, default_values: nil)  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -637,8 +634,7 @@ There is a limit of 100 characters to each custom_id.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Add a select mentionable to this action row.</p>
-
+    <p>Add a mentionable select to this action row.</p>
 
   </div>
 </div>
@@ -657,8 +653,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
         &mdash;
         <div class='inline'><p>Custom IDs are used to pass state to the events that are raised from interactions.
-There is a limit of 100 characters to each custom_id.</p>
-</div>
+There is a limit of 100 characters to each custom_id.</p></div>
       
     </li>
   
@@ -674,8 +669,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The unique 32-bit ID of the mentionable select. This is not to be confused with the <code>custom_id</code>.</p>
-</div>
+        <div class='inline'><p>The unique 32-bit ID of the mentionable select. This is not to be confused with the <code>custom_id</code>.</p></div>
       
     </li>
   
@@ -691,8 +685,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Default text to show when no entries are selected.</p>
-</div>
+        <div class='inline'><p>Default text to show when no entries are selected.</p></div>
       
     </li>
   
@@ -708,8 +701,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The minimum amount of values a user must select.</p>
-</div>
+        <div class='inline'><p>The minimum amount of values a user must select.</p></div>
       
     </li>
   
@@ -725,8 +717,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The maximum amount of values a user can select.</p>
-</div>
+        <div class='inline'><p>The maximum amount of values a user can select.</p></div>
       
     </li>
   
@@ -742,8 +733,23 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Grey out the component to make it unusable.</p>
-</div>
+        <div class='inline'><p>Grey out the component to make it unusable.</p></div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>default_values</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="../../User.html" title="Discordrb::User (class)">User</a></span>, <span class='object_link'><a href="../../Role.html" title="Discordrb::Role (class)">Role</a></span>, <span class='object_link'><a href="../../Member.html" title="Discordrb::Member (class)">Member</a></span>, <span class='object_link'><a href="../../Recipient.html" title="Discordrb::Recipient (class)">Recipient</a></span>, Hash&gt;</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The mentionable entities to populate in the select menu by default.</p></div>
       
     </li>
   
@@ -756,15 +762,15 @@ There is a limit of 100 characters to each custom_id.</p>
       <pre class="lines">
 
 
-132
-133
-134</pre>
+135
+136
+137</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/view.rb', line 132</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/view.rb', line 135</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_mentionable_select'>mentionable_select</span><span class='lparen'>(</span><span class='label'>custom_id:</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>placeholder:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>min_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>max_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>disabled:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='ivar'>@components</span> <span class='op'>&lt;&lt;</span> <span class='const'><span class='object_link'><a href="SelectMenuBuilder.html" title="Discordrb::Webhooks::View::SelectMenuBuilder (class)">SelectMenuBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="SelectMenuBuilder.html#initialize-instance_method" title="Discordrb::Webhooks::View::SelectMenuBuilder#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_custom_id'>custom_id</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_placeholder'>placeholder</span><span class='comma'>,</span> <span class='id identifier rubyid_min_values'>min_values</span><span class='comma'>,</span> <span class='id identifier rubyid_max_values'>max_values</span><span class='comma'>,</span> <span class='id identifier rubyid_disabled'>disabled</span><span class='comma'>,</span> <span class='label'>select_type:</span> <span class='symbol'>:mentionable_select</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_h'>to_h</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_mentionable_select'>mentionable_select</span><span class='lparen'>(</span><span class='label'>custom_id:</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>placeholder:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>min_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>max_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>disabled:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>default_values:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='ivar'>@components</span> <span class='op'>&lt;&lt;</span> <span class='const'><span class='object_link'><a href="SelectMenuBuilder.html" title="Discordrb::Webhooks::View::SelectMenuBuilder (class)">SelectMenuBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_id'>custom_id</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_placeholder'>placeholder</span><span class='comma'>,</span> <span class='id identifier rubyid_min_values'>min_values</span><span class='comma'>,</span> <span class='id identifier rubyid_max_values'>max_values</span><span class='comma'>,</span> <span class='id identifier rubyid_disabled'>disabled</span><span class='comma'>,</span> <span class='label'>select_type:</span> <span class='symbol'>:mentionable_select</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>default_values:</span> <span class='id identifier rubyid_default_values'>default_values</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_h'>to_h</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -774,7 +780,7 @@ There is a limit of 100 characters to each custom_id.</p>
       <div class="method_details ">
   <h3 class="signature " id="role_select-instance_method">
   
-    #<strong>role_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil)  &#x21d2; <tt>Object</tt> 
+    #<strong>role_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil, default_values: nil)  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -782,8 +788,7 @@ There is a limit of 100 characters to each custom_id.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Add a select role to this action row.</p>
-
+    <p>Add a role select to this action row.</p>
 
   </div>
 </div>
@@ -802,8 +807,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
         &mdash;
         <div class='inline'><p>Custom IDs are used to pass state to the events that are raised from interactions.
-There is a limit of 100 characters to each custom_id.</p>
-</div>
+There is a limit of 100 characters to each custom_id.</p></div>
       
     </li>
   
@@ -819,8 +823,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The unique 32-bit ID of the role select. This is not to be confused with the <code>custom_id</code>.</p>
-</div>
+        <div class='inline'><p>The unique 32-bit ID of the role select. This is not to be confused with the <code>custom_id</code>.</p></div>
       
     </li>
   
@@ -836,8 +839,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Default text to show when no entries are selected.</p>
-</div>
+        <div class='inline'><p>Default text to show when no entries are selected.</p></div>
       
     </li>
   
@@ -853,8 +855,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The minimum amount of values a user must select.</p>
-</div>
+        <div class='inline'><p>The minimum amount of values a user must select.</p></div>
       
     </li>
   
@@ -870,8 +871,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The maximum amount of values a user can select.</p>
-</div>
+        <div class='inline'><p>The maximum amount of values a user can select.</p></div>
       
     </li>
   
@@ -887,8 +887,23 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Grey out the component to make it unusable.</p>
-</div>
+        <div class='inline'><p>Grey out the component to make it unusable.</p></div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>default_values</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="../../Role.html" title="Discordrb::Role (class)">Role</a></span>, <span class='object_link'><a href="../../../Integer.html" title="Integer (class)">Integer</a></span>, <span class='object_link'><a href="../../../String.html" title="String (class)">String</a></span>, Hash&gt;</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The roles to populate in the select menu by default.</p></div>
       
     </li>
   
@@ -901,15 +916,15 @@ There is a limit of 100 characters to each custom_id.</p>
       <pre class="lines">
 
 
-120
-121
-122</pre>
+122
+123
+124</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/view.rb', line 120</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/view.rb', line 122</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_role_select'>role_select</span><span class='lparen'>(</span><span class='label'>custom_id:</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>placeholder:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>min_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>max_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>disabled:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='ivar'>@components</span> <span class='op'>&lt;&lt;</span> <span class='const'><span class='object_link'><a href="SelectMenuBuilder.html" title="Discordrb::Webhooks::View::SelectMenuBuilder (class)">SelectMenuBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="SelectMenuBuilder.html#initialize-instance_method" title="Discordrb::Webhooks::View::SelectMenuBuilder#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_custom_id'>custom_id</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_placeholder'>placeholder</span><span class='comma'>,</span> <span class='id identifier rubyid_min_values'>min_values</span><span class='comma'>,</span> <span class='id identifier rubyid_max_values'>max_values</span><span class='comma'>,</span> <span class='id identifier rubyid_disabled'>disabled</span><span class='comma'>,</span> <span class='label'>select_type:</span> <span class='symbol'>:role_select</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_h'>to_h</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_role_select'>role_select</span><span class='lparen'>(</span><span class='label'>custom_id:</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>placeholder:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>min_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>max_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>disabled:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>default_values:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='ivar'>@components</span> <span class='op'>&lt;&lt;</span> <span class='const'><span class='object_link'><a href="SelectMenuBuilder.html" title="Discordrb::Webhooks::View::SelectMenuBuilder (class)">SelectMenuBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_id'>custom_id</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_placeholder'>placeholder</span><span class='comma'>,</span> <span class='id identifier rubyid_min_values'>min_values</span><span class='comma'>,</span> <span class='id identifier rubyid_max_values'>max_values</span><span class='comma'>,</span> <span class='id identifier rubyid_disabled'>disabled</span><span class='comma'>,</span> <span class='label'>select_type:</span> <span class='symbol'>:role_select</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>default_values:</span> <span class='id identifier rubyid_default_values'>default_values</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_h'>to_h</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -933,7 +948,6 @@ There is a limit of 100 characters to each custom_id.</p>
   <div class="discussion">
     <p>Add a string select to this action row.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -951,8 +965,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
         &mdash;
         <div class='inline'><p>Custom IDs are used to pass state to the events that are raised from interactions.
-There is a limit of 100 characters to each custom_id.</p>
-</div>
+There is a limit of 100 characters to each custom_id.</p></div>
       
     </li>
   
@@ -968,8 +981,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The unique 32-bit ID of the string select. This is not to be confused with the <code>custom_id</code>.</p>
-</div>
+        <div class='inline'><p>The unique 32-bit ID of the string select. This is not to be confused with the <code>custom_id</code>.</p></div>
       
     </li>
   
@@ -985,8 +997,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Options that can be selected in this menu. Can also be provided via the yielded builder.</p>
-</div>
+        <div class='inline'><p>Options that can be selected in this menu. Can also be provided via the yielded builder.</p></div>
       
     </li>
   
@@ -1002,8 +1013,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Default text to show when no entries are selected.</p>
-</div>
+        <div class='inline'><p>Default text to show when no entries are selected.</p></div>
       
     </li>
   
@@ -1019,8 +1029,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The minimum amount of values a user must select.</p>
-</div>
+        <div class='inline'><p>The minimum amount of values a user must select.</p></div>
       
     </li>
   
@@ -1036,8 +1045,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The maximum amount of values a user can select.</p>
-</div>
+        <div class='inline'><p>The maximum amount of values a user can select.</p></div>
       
     </li>
   
@@ -1053,8 +1061,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Grey out the component to make it unusable.</p>
-</div>
+        <div class='inline'><p>Grey out the component to make it unusable.</p></div>
       
     </li>
   
@@ -1094,7 +1101,7 @@ There is a limit of 100 characters to each custom_id.</p>
       <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/view.rb', line 90</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_string_select'>string_select</span><span class='lparen'>(</span><span class='label'>custom_id:</span><span class='comma'>,</span> <span class='label'>options:</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>placeholder:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>min_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>max_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>disabled:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_builder'>builder</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="SelectMenuBuilder.html" title="Discordrb::Webhooks::View::SelectMenuBuilder (class)">SelectMenuBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="SelectMenuBuilder.html#initialize-instance_method" title="Discordrb::Webhooks::View::SelectMenuBuilder#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_custom_id'>custom_id</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='comma'>,</span> <span class='id identifier rubyid_placeholder'>placeholder</span><span class='comma'>,</span> <span class='id identifier rubyid_min_values'>min_values</span><span class='comma'>,</span> <span class='id identifier rubyid_max_values'>max_values</span><span class='comma'>,</span> <span class='id identifier rubyid_disabled'>disabled</span><span class='comma'>,</span> <span class='label'>select_type:</span> <span class='symbol'>:string_select</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_builder'>builder</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="SelectMenuBuilder.html" title="Discordrb::Webhooks::View::SelectMenuBuilder (class)">SelectMenuBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_id'>custom_id</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='comma'>,</span> <span class='id identifier rubyid_placeholder'>placeholder</span><span class='comma'>,</span> <span class='id identifier rubyid_min_values'>min_values</span><span class='comma'>,</span> <span class='id identifier rubyid_max_values'>max_values</span><span class='comma'>,</span> <span class='id identifier rubyid_disabled'>disabled</span><span class='comma'>,</span> <span class='label'>select_type:</span> <span class='symbol'>:string_select</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
 
   <span class='kw'>yield</span> <span class='id identifier rubyid_builder'>builder</span> <span class='kw'>if</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
 
@@ -1108,7 +1115,7 @@ There is a limit of 100 characters to each custom_id.</p>
       <div class="method_details ">
   <h3 class="signature " id="user_select-instance_method">
   
-    #<strong>user_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil)  &#x21d2; <tt>Object</tt> 
+    #<strong>user_select</strong>(custom_id:, id: nil, placeholder: nil, min_values: nil, max_values: nil, disabled: nil, default_values: nil)  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -1116,8 +1123,7 @@ There is a limit of 100 characters to each custom_id.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Add a select user to this action row.</p>
-
+    <p>Add a user select to this action row.</p>
 
   </div>
 </div>
@@ -1136,8 +1142,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
         &mdash;
         <div class='inline'><p>Custom IDs are used to pass state to the events that are raised from interactions.
-There is a limit of 100 characters to each custom_id.</p>
-</div>
+There is a limit of 100 characters to each custom_id.</p></div>
       
     </li>
   
@@ -1153,8 +1158,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The unique 32-bit ID of the user select. This is not to be confused with the <code>custom_id</code>.</p>
-</div>
+        <div class='inline'><p>The unique 32-bit ID of the user select. This is not to be confused with the <code>custom_id</code>.</p></div>
       
     </li>
   
@@ -1170,8 +1174,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Default text to show when no entries are selected.</p>
-</div>
+        <div class='inline'><p>Default text to show when no entries are selected.</p></div>
       
     </li>
   
@@ -1187,8 +1190,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The minimum amount of values a user must select.</p>
-</div>
+        <div class='inline'><p>The minimum amount of values a user must select.</p></div>
       
     </li>
   
@@ -1204,8 +1206,7 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>The maximum amount of values a user can select.</p>
-</div>
+        <div class='inline'><p>The maximum amount of values a user can select.</p></div>
       
     </li>
   
@@ -1221,8 +1222,23 @@ There is a limit of 100 characters to each custom_id.</p>
       
       
         &mdash;
-        <div class='inline'><p>Grey out the component to make it unusable.</p>
-</div>
+        <div class='inline'><p>Grey out the component to make it unusable.</p></div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>default_values</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="../../User.html" title="Discordrb::User (class)">User</a></span>, <span class='object_link'><a href="../../Member.html" title="Discordrb::Member (class)">Member</a></span>, <span class='object_link'><a href="../../Recipient.html" title="Discordrb::Recipient (class)">Recipient</a></span>, <span class='object_link'><a href="../../../Integer.html" title="Integer (class)">Integer</a></span>, <span class='object_link'><a href="../../../String.html" title="String (class)">String</a></span>, Hash&gt;</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The users to populate in the select menu by default.</p></div>
       
     </li>
   
@@ -1235,15 +1251,15 @@ There is a limit of 100 characters to each custom_id.</p>
       <pre class="lines">
 
 
-108
 109
-110</pre>
+110
+111</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/view.rb', line 108</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/webhooks/view.rb', line 109</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_user_select'>user_select</span><span class='lparen'>(</span><span class='label'>custom_id:</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>placeholder:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>min_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>max_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>disabled:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='ivar'>@components</span> <span class='op'>&lt;&lt;</span> <span class='const'><span class='object_link'><a href="SelectMenuBuilder.html" title="Discordrb::Webhooks::View::SelectMenuBuilder (class)">SelectMenuBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="SelectMenuBuilder.html#initialize-instance_method" title="Discordrb::Webhooks::View::SelectMenuBuilder#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_custom_id'>custom_id</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_placeholder'>placeholder</span><span class='comma'>,</span> <span class='id identifier rubyid_min_values'>min_values</span><span class='comma'>,</span> <span class='id identifier rubyid_max_values'>max_values</span><span class='comma'>,</span> <span class='id identifier rubyid_disabled'>disabled</span><span class='comma'>,</span> <span class='label'>select_type:</span> <span class='symbol'>:user_select</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_h'>to_h</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_user_select'>user_select</span><span class='lparen'>(</span><span class='label'>custom_id:</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>placeholder:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>min_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>max_values:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>disabled:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>default_values:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='ivar'>@components</span> <span class='op'>&lt;&lt;</span> <span class='const'><span class='object_link'><a href="SelectMenuBuilder.html" title="Discordrb::Webhooks::View::SelectMenuBuilder (class)">SelectMenuBuilder</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_id'>custom_id</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_placeholder'>placeholder</span><span class='comma'>,</span> <span class='id identifier rubyid_min_values'>min_values</span><span class='comma'>,</span> <span class='id identifier rubyid_max_values'>max_values</span><span class='comma'>,</span> <span class='id identifier rubyid_disabled'>disabled</span><span class='comma'>,</span> <span class='label'>select_type:</span> <span class='symbol'>:user_select</span><span class='comma'>,</span> <span class='label'>id:</span> <span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>default_values:</span> <span class='id identifier rubyid_default_values'>default_values</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_h'>to_h</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1255,9 +1271,9 @@ There is a limit of 100 characters to each custom_id.</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  5 09:09:34 2026 by
+  Generated on Mon Apr 20 14:21:25 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.38 (ruby-3.3.10).
+  0.9.43 (ruby-3.3.11).
 </div>
 
     </div>

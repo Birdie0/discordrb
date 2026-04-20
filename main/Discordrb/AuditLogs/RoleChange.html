@@ -6,13 +6,13 @@
 <title>
   Class: Discordrb::AuditLogs::RoleChange
   
-    &mdash; Documentation by YARD 0.9.38
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Discordrb::AuditLogs::RoleChange";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -94,7 +96,8 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/discordrb/data/audit_logs.rb</dd>
+    <dd>lib/discordrb/data/audit_logs.rb
+</dd>
   </dl>
   
 </div>
@@ -102,7 +105,6 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     <p>A change that includes roles.</p>
-
 
   </div>
 </div>
@@ -138,8 +140,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>What type of change this is: (:add, :remove).</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>What type of change this is: (:add, :remove).</p></div></span>
   
 </li>
 
@@ -174,13 +175,13 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The role being used.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The role being used.</p></div></span>
   
 </li>
 
       
     </ul>
+    
   
 
 
@@ -202,7 +203,6 @@
   <div class="discussion">
     <p>Returns what type of change this is: (:add, :remove).</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -218,8 +218,7 @@
       
       
         &mdash;
-        <div class='inline'><p>what type of change this is: (:add, :remove)</p>
-</div>
+        <div class='inline'><p>what type of change this is: (:add, :remove)</p></div>
       
     </li>
   
@@ -231,12 +230,12 @@
       <pre class="lines">
 
 
-260
-261
-262</pre>
+341
+342
+343</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/audit_logs.rb', line 260</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/audit_logs.rb', line 341</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_type'>type</span>
   <span class='ivar'>@type</span>
@@ -266,7 +265,6 @@
   <div class="discussion">
     <p>Returns the role being used.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -282,8 +280,7 @@
       
       
         &mdash;
-        <div class='inline'><p>the role being used.</p>
-</div>
+        <div class='inline'><p>the role being used.</p></div>
       
     </li>
   
@@ -295,12 +292,12 @@
       <pre class="lines">
 
 
-270
-271
-272</pre>
+351
+352
+353</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/audit_logs.rb', line 270</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/audit_logs.rb', line 351</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_role'>role</span>
   <span class='ivar'>@role</span> <span class='op'>||=</span> <span class='ivar'>@server</span><span class='period'>.</span><span class='id identifier rubyid_role'>role</span><span class='lparen'>(</span><span class='ivar'>@role_id</span><span class='rparen'>)</span>
@@ -315,9 +312,9 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  5 09:09:35 2026 by
+  Generated on Mon Apr 20 14:21:27 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.38 (ruby-3.3.10).
+  0.9.43 (ruby-3.3.11).
 </div>
 
     </div>
